@@ -13,8 +13,8 @@ The toolchain is tested on Ubuntu 16.04 using Python 3.6.
 ## Usage
 
 1. Navigate to the desired use case folder
--  cart pendulum use case: `$ cd competitive_analysis/cart_pendulum`
--  motion planning use case: `$ cd competitive_analysis/motion_planning`
+-  cart pendulum use case: `$ cd competitive-analysis/cart_pendulum`
+-  motion planning use case: `$ cd competitive-analysis/motion_planning`
 
 2. Execute the shell script to start the competitive analysis toolchain:
 -  cart pendulum use case: `./run_cart.sh`
