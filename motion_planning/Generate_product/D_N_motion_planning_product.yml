@@ -1,0 +1,31 @@
+time: 100
+max jumps: 30
+fixed orders: 3
+adaptive steps: '{min 1e-6, max 0.1}'
+
+
+#fixed steps: 0.001
+#adaptive steps: '{min 1, max 1}'
+# adaptive steps: '{min 1e-3, max 1}'
+
+init: 
+  mode: initD_initN_loc1_loc1
+  states:
+    - clock in [0, 0]
+    - clockD in [0, 0]
+    - clockN in [0, 0]
+    - xD in [0, 0]
+    - xN in [0, 0]
+    - yD in [0, 0]
+    - yN in [0, 0]
+    - thetaD in [0, 0]
+    - thetaN in [0, 0]
+    - vD in [0.5, 0.5]
+    - vN in [0.5, 0.5]
+unsafe:
+  - mode: environmmentD_environmmentN_loc1_loc1
+    states:
+    -  costD - costN >= 0.25
+print: 'on'
+plot: true
+dump: true

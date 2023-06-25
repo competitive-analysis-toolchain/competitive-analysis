@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" version="0.2" math="SpaceEx">
+  <component id="D">
+    <param name="clockG" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="tdiffD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="clockD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="_f1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="_f2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="_f3" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="xD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="yD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="thetaD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="clock" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="L" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="choice" type="label" local="false" />
+    <param name="chosen" type="label" local="false" />
+    <param name="reset1" type="label" local="false" />
+    <param name="reset2" type="label" local="false" />
+    <param name="reset3" type="label" local="false" />
+    <param name="vD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="deltaD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <location id="2" name="initD" x="333.0" y="112.0" width="122.0" height="184.0">
+      <invariant>clockD &lt;= 0</invariant>
+      <flow>clockD' == 1 &amp;
+xD' == 0 &amp;
+yD' == 0 &amp;
+thetaD' == 0 &amp;
+vD' == 0 &amp;
+deltaD' == 0 &amp;
+tdiffD' == 0 &amp;
+clockG' == 1</flow>
+    </location>
+    <location id="5" name="DNN" x="689.0" y="113.0" width="182.0" height="184.0">
+      <flow>clockD' == 1 &amp;
+xD' == 0 &amp;
+yD' == 0 &amp;
+thetaD' == 0 &amp;
+vD' == 0 &amp;
+deltaD' == 0 &amp;
+tdiffD' == 0 &amp;
+clockG' == 1</flow>
+    </location>
+    <location id="1" name="environmmentD" x="690.0" y="478.0" width="370.0" height="246.0">
+      <note>wxtf is the x-coordinate of the waypoint
+wytf is the y-coordinate of the waypoint</note>
+      <invariant>clockD &lt;= 1.9</invariant>
+      <flow>clockD' == 1 &amp;
+xD' == vD*cos(thetaD) &amp;
+yD' == vD*sin(thetaD) &amp;
+thetaD' == (vD/L)*(sin(deltaD)/cos(deltaD))   &amp;
+vD' == 0 &amp;
+deltaD' == 0 &amp;
+tdiffD' == 0 &amp;
+clockG' == 1</flow>
+    </location>
+    <location id="3" name="ZD" x="336.0" y="486.0" width="104.0" height="176.0">
+      <invariant>clockD &lt;= 0</invariant>
+      <flow>clockD' == 1 &amp;
+xD' == 0 &amp;
+yD' == 0 &amp;
+thetaD' == 0 &amp;
+vD' == 0 &amp;
+deltaD' == 0 &amp;
+tdiffD' == 0 &amp;
+clockG' == 1</flow>
+    </location>
+    <location id="4" name="ZZD" x="157.0" y="490.0" width="104.0" height="176.0">
+      <invariant>clockD &lt;= 0</invariant>
+      <flow>clockD' == 1 &amp;
+xD' == 0 &amp;
+yD' == 0 &amp;
+thetaD' == 0 &amp;
+vD' == 0 &amp;
+deltaD' == 0 &amp;
+tdiffD' == 0 &amp;
+clockG' == 1</flow>
+    </location>
+    <transition source="2" target="5">
+      <label>choice</label>
+      <guard>clockD == 0.0</guard>
+      <assignment>_f1 := xD &amp;
+_f2 := yD &amp;
+_f3 := thetaD &amp;
+clockD' == 0</assignment>
+      <labelposition x="-94.0" y="-104.0" width="156.0" height="104.0" />
+    </transition>
+    <transition source="5" target="1">
+      <note>No guards set for velocity (vD or _f1) and turning rate (deltaD or _f2) as the DNN is trained respecting these bounds.</note>
+      <label>chosen</label>
+      <guard>clockD == 0</guard>
+      <assignment>clockD :=0 &amp;
+deltaD := _f1 &amp;
+vD := _f2 &amp;
+tdiffD:= _f3</assignment>
+      <labelposition x="15.0" y="-70.0" width="106.0" height="118.0" />
+    </transition>
+    <transition source="1" target="3">
+      <label>reset1</label>
+      <guard>clockD == 1.9</guard>
+      <assignment>clockD:=0</assignment>
+      <labelposition x="-58.0" y="-62.0" width="120.0" height="56.0" />
+      <middlepoint x="438.5" y="484.5" />
+    </transition>
+    <transition source="3" target="4">
+      <label>reset2</label>
+      <labelposition x="13.0" y="-47.0" />
+      <middlepoint x="209.5" y="486.0" />
+    </transition>
+    <transition source="4" target="2">
+      <label>reset3</label>
+      <labelposition x="7.0" y="11.0" />
+    </transition>
+  </component>
+  <component id="C2">
+    <param name="chosen" type="label" local="false" />
+    <param name="reset1" type="label" local="false" />
+    <param name="choice" type="label" local="false" />
+    <param name="xN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="yN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="total_distN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="wx_lastN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="wy_lastN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="pxN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="pyN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="D_wlastN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="DminN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="D_w0N" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="D_w1N" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="D_w2N" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="wx_0N" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="wx_1N" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="wx_2N" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="wy_0N" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="wy_1N" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="wy_2N" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="D_w01N" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="D_w12N" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="costN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="reset2" type="label" local="false" />
+    <param name="reset3" type="label" local="false" />
+    <location id="2" name="loc2" x="352.0" y="135.0" />
+    <location id="3" name="loc21" x="512.0" y="136.0" width="78.0" height="52.0" />
+    <location id="4" name="loc22" x="667.0" y="135.0" width="84.0" height="52.0" />
+    <location id="5" name="loc23" x="669.0" y="319.0" width="84.0" height="52.0" />
+    <transition source="1" target="2">
+      <note>px is previous value of x
+py is previous value of y</note>
+      <label>reset2</label>
+      <assignment>total_distN:= total_distN+(xN-pxN)*(xN-pxN)+(yN-pyN)*(yN-pyN)</assignment>
+      <labelposition x="-65.0" y="1.0" width="124.0" height="60.0" />
+    </transition>
+    <location id="1" name="loc1" x="203.0" y="134.0" />
+    <location id="6" name="loc24" x="518.0" y="317.0" width="84.0" height="52.0" />
+    <location id="7" name="loc25" x="362.0" y="317.0" width="84.0" height="52.0" />
+    <location id="8" name="loc3" x="201.0" y="316.0" width="72.0" height="58.0" />
+    <transition source="1" target="1">
+      <label>chosen</label>
+      <labelposition x="0.0" y="0.0" />
+    </transition>
+    <transition source="2" target="3">
+      <guard>total_distN - D_w01N &lt;= 0.001</guard>
+      <assignment>wx_lastN:= 4.9726094768414 &amp;
+wy_lastN:= 15.211111111111</assignment>
+      <labelposition x="-103.0" y="-26.0" width="186.0" height="84.0" />
+      <middlepoint x="437.0" y="174.5" />
+    </transition>
+    <transition source="3" target="4">
+      <guard>total_distN - D_w01N - D_w12N &lt;= 0.001</guard>
+      <assignment>wx_lastN:= 4.9726094768414 &amp;
+wy_lastN:= 15.211111111111</assignment>
+      <labelposition x="-71.0" y="-25.0" width="194.0" height="80.0" />
+      <middlepoint x="588.5" y="172.5" />
+    </transition>
+    <transition source="2" target="3">
+      <guard>total_distN - D_w01N &gt;= 0</guard>
+      <assignment>wx_lastN:= 4.7552825814758 &amp;
+wy_lastN:= 16.9</assignment>
+      <labelposition x="-144.0" y="-75.0" width="188.0" height="76.0" />
+      <middlepoint x="438.0" y="97.5" />
+    </transition>
+    <transition source="3" target="4">
+      <guard>total_distN - D_w01N - D_w12N &gt;= 0</guard>
+      <assignment>wx_lastN:= 4.3301270189222 &amp;
+wy_lastN:= 17.777777777778</assignment>
+      <labelposition x="-41.0" y="-64.0" width="218.0" height="80.0" />
+      <middlepoint x="589.5" y="99.5" />
+    </transition>
+    <transition source="4" target="5">
+      <note>D_w0, D_w1, D_w2: Distance b/w MPC positions and the waypoints.</note>
+      <assignment>D_wlastN:= (xN - wx_lastN)*(xN - wx_lastN) + (yN - wy_lastN)*(yN - wy_lastN) &amp;
+D_w0N:= (xN-wx_0N) * (xN-wx_0N) + (yN-wy_0N) * (yN-wy_0N) &amp;
+D_w1N:= (xN-wx_1N) * (xN-wx_1N) + (yN-wy_1N) * (yN-wy_1N) &amp;
+D_w2N:= (xN-wx_2N) * (xN-wx_2N) + (yN-wy_2N) * (yN-wy_2N) &amp;
+DminN:= D_w0N</assignment>
+      <labelposition x="29.0" y="-66.0" width="344.0" height="150.0" />
+    </transition>
+    <transition source="5" target="6">
+      <guard>DminN - D_w1N &gt;= 0</guard>
+      <assignment>DminN:= D_w1N</assignment>
+      <labelposition x="-62.0" y="-48.0" width="140.0" height="58.0" />
+      <middlepoint x="597.5" y="282.0" />
+    </transition>
+    <transition source="5" target="6">
+      <guard>DminN - D_w1N &lt;= 0.001</guard>
+      <labelposition x="-46.0" y="-9.0" width="166.0" height="70.0" />
+      <middlepoint x="601.5" y="351.0" />
+    </transition>
+    <transition source="6" target="7">
+      <guard>DminN - D_w2N &gt;= 0</guard>
+      <assignment>DminN:=D_w2N</assignment>
+      <labelposition x="-49.0" y="-53.0" width="142.0" height="62.0" />
+      <middlepoint x="441.0" y="283.0" />
+    </transition>
+    <transition source="6" target="7">
+      <guard>DminN - D_w2N &lt;= 0.001</guard>
+      <labelposition x="-83.0" y="-16.0" width="174.0" height="66.0" />
+      <middlepoint x="444.0" y="357.0" />
+    </transition>
+    <transition source="7" target="8">
+      <assignment>costN:= costN + DminN + D_wlastN</assignment>
+      <labelposition x="-83.0" y="-3.0" width="210.0" height="50.0" />
+    </transition>
+    <transition source="8" target="1">
+      <label>reset3</label>
+      <assignment>pxN:=xN &amp;
+pyN:=yN</assignment>
+      <labelposition x="2.0" y="-7.0" width="82.0" height="66.0" />
+    </transition>
+    <transition source="1" target="1">
+      <label>reset1</label>
+      <labelposition x="0.0" y="-19.0" />
+      <middlepoint x="-1.0" y="-87.0" />
+    </transition>
+    <transition source="1" target="1">
+      <label>choice</label>
+      <labelposition x="33.0" y="-15.0" />
+      <middlepoint x="-3.0" y="-113.0" />
+    </transition>
+  </component>
+  <component id="C1">
+    <param name="chosen" type="label" local="false" />
+    <param name="reset1" type="label" local="false" />
+    <param name="choice" type="label" local="false" />
+    <param name="reset2" type="label" local="false" />
+    <param name="xD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="yD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="total_distD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="wx_lastD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="wy_lastD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="pxD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="pyD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="D_wlastD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="DminD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="D_w0D" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="D_w1D" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="D_w2D" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="wx_0D" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="wx_1D" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="wx_2D" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="wy_0D" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="wy_1D" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="wy_2D" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="D_w01D" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="D_w12D" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="costD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="reset3" type="label" local="false" />
+    <location id="2" name="loc2" x="352.0" y="135.0" />
+    <location id="3" name="loc21" x="512.0" y="136.0" width="78.0" height="52.0" />
+    <location id="4" name="loc22" x="667.0" y="135.0" width="84.0" height="52.0" />
+    <location id="5" name="loc23" x="669.0" y="319.0" width="84.0" height="52.0" />
+    <transition source="1" target="2">
+      <note>px is previous value of x
+py is previous value of y</note>
+      <label>reset1</label>
+      <assignment>total_distD:= total_distD+(xD-pxD)*(xD-pxD)+(yD-pyD)*(yD-pyD)</assignment>
+      <labelposition x="-65.0" y="1.0" width="124.0" height="60.0" />
+    </transition>
+    <location id="1" name="loc1" x="203.0" y="134.0" />
+    <location id="6" name="loc24" x="518.0" y="317.0" width="84.0" height="52.0" />
+    <location id="7" name="loc25" x="362.0" y="317.0" width="84.0" height="52.0" />
+    <location id="8" name="loc3" x="201.0" y="316.0" width="72.0" height="58.0" />
+    <transition source="1" target="1">
+      <label>chosen</label>
+      <labelposition x="0.0" y="0.0" />
+    </transition>
+    <transition source="2" target="3">
+      <guard>total_distD - D_w01D &lt;= 0.001</guard>
+      <assignment>wx_lastD:= 4.9726094768414 &amp;
+wy_lastD:= 15.211111111111</assignment>
+      <labelposition x="-103.0" y="-26.0" width="186.0" height="84.0" />
+      <middlepoint x="437.0" y="174.5" />
+    </transition>
+    <transition source="3" target="4">
+      <guard>total_distD - D_w01D - D_w12D &lt;= 0.001</guard>
+      <assignment>wx_lastD:= 4.9726094768414 &amp;
+wy_lastD:= 15.211111111111</assignment>
+      <labelposition x="-71.0" y="-25.0" width="194.0" height="80.0" />
+      <middlepoint x="588.5" y="172.5" />
+    </transition>
+    <transition source="2" target="3">
+      <guard>total_distD - D_w01D &gt;= 0</guard>
+      <assignment>wx_lastD:= 4.7552825814758 &amp;
+wy_lastD:= 16.9</assignment>
+      <labelposition x="-144.0" y="-75.0" width="188.0" height="76.0" />
+      <middlepoint x="438.0" y="97.5" />
+    </transition>
+    <transition source="3" target="4">
+      <guard>total_distD - D_w01D- D_w12D &gt;= 0</guard>
+      <assignment>wx_lastD:= 4.3301270189222 &amp;
+wy_lastD:= 17.777777777778</assignment>
+      <labelposition x="-41.0" y="-64.0" width="218.0" height="80.0" />
+      <middlepoint x="589.5" y="99.5" />
+    </transition>
+    <transition source="4" target="5">
+      <note>D_w0, D_w1, D_w2: Distance b/w MPC positions and the waypoints.</note>
+      <assignment>D_wlastD:= (xD - wx_lastD)*(xD - wx_lastD) + (yD - wy_lastD)*(yD - wy_lastD) &amp;
+D_w0D:= (xD-wx_0D) * (xD-wx_0D) + (yD-wy_0D) * (yD-wy_0D) &amp;
+D_w1D:= (xD-wx_1D) * (xD-wx_1D) + (yD-wy_1D) * (yD-wy_1D) &amp;
+D_w2D:= (xD-wx_2D) * (xD-wx_2D) + (yD-wy_2D) * (yD-wy_2D) &amp;
+DminD:= D_w0D</assignment>
+      <labelposition x="14.0" y="-52.0" width="420.0" height="140.0" />
+    </transition>
+    <transition source="5" target="6">
+      <guard>DminD - D_w1D &gt;= 0</guard>
+      <assignment>DminD:= D_w1D</assignment>
+      <labelposition x="-62.0" y="-48.0" width="140.0" height="58.0" />
+      <middlepoint x="597.5" y="282.0" />
+    </transition>
+    <transition source="5" target="6">
+      <guard>DminD - D_w1D &lt;= 0.001</guard>
+      <labelposition x="-46.0" y="-9.0" width="146.0" height="50.0" />
+      <middlepoint x="601.5" y="351.0" />
+    </transition>
+    <transition source="6" target="7">
+      <guard>DminD - D_w2D &gt;= 0</guard>
+      <assignment>DminD:=D_w2D</assignment>
+      <labelposition x="-49.0" y="-53.0" width="142.0" height="62.0" />
+      <middlepoint x="441.0" y="283.0" />
+    </transition>
+    <transition source="6" target="7">
+      <guard>DminD - D_w2D &lt;= 0.001</guard>
+      <labelposition x="-32.0" y="-11.0" width="150.0" height="62.0" />
+      <middlepoint x="444.0" y="357.0" />
+    </transition>
+    <transition source="7" target="8">
+      <assignment>costD:= costD + DminD + D_wlastD</assignment>
+      <labelposition x="-113.0" y="5.0" width="224.0" height="56.0" />
+    </transition>
+    <transition source="8" target="1">
+      <label>reset2</label>
+      <assignment>pxD:=xD &amp;
+pyD:=yD</assignment>
+      <labelposition x="2.0" y="-7.0" width="82.0" height="66.0" />
+    </transition>
+    <transition source="1" target="1">
+      <label>choice</label>
+      <labelposition x="2.0" y="-22.0" />
+      <middlepoint x="0.0" y="-94.0" />
+    </transition>
+    <transition source="1" target="1">
+      <label>reset3</label>
+      <labelposition x="27.0" y="0.0" />
+      <middlepoint x="-3.0" y="-110.0" />
+    </transition>
+  </component>
+  <component id="N">
+    <param name="clockG" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="clockN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="_f1" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="_f2" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="_f3" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="xN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="yN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="thetaN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="clock" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="L" type="real" local="false" d1="1" d2="1" dynamics="const" />
+    <param name="choice" type="label" local="false" />
+    <param name="chosen" type="label" local="false" />
+    <param name="reset1" type="label" local="false" />
+    <param name="reset2" type="label" local="false" />
+    <param name="reset3" type="label" local="false" />
+    <param name="vN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="deltaN" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <param name="tdiffD" type="real" local="false" d1="1" d2="1" dynamics="any" />
+    <location id="2" name="initN" x="259.0" y="118.0" width="122.0" height="184.0">
+      <invariant>clockN &lt;= 0</invariant>
+      <flow>clockN' == 1 &amp;
+xN' == 0 &amp;
+yN' == 0 &amp;
+thetaN' == 0 &amp;
+vN' == 0 &amp;
+deltaN' == 0 &amp;
+clockG' == 1 &amp;
+tdiffD' == 0</flow>
+    </location>
+    <location id="5" name="DNN" x="618.0" y="119.0" width="182.0" height="184.0">
+      <flow>clockN' == 0 &amp;
+xN' == 0 &amp;
+yN' == 0 &amp;
+thetaN' == 0 &amp;
+vN' == 0 &amp;
+deltaN' == 0 &amp;
+clockG' == 1 &amp;
+tdiffD' == 0</flow>
+    </location>
+    <location id="3" name="environmmentN" x="604.0" y="501.0" width="348.0" height="208.0">
+      <note>wxtf is the x-coordinate of the waypoint
+wytf is the y-coordinate of the waypoint</note>
+      <invariant>clockN &lt;= 1.9</invariant>
+      <flow>clockN' == 1 &amp;
+xN' == vN*cos(thetaN) &amp;
+yN' == vN*sin(thetaN) &amp;
+thetaN' == (vN/L)*(sin(deltaN)/cos(deltaN))  &amp;
+vN' == 0 &amp;
+deltaN' == 0 &amp;
+clockG' == 1 &amp;
+tdiffD' == 0</flow>
+    </location>
+    <location id="1" name="ZN" x="250.0" y="500.0" width="106.0" height="178.0">
+      <invariant>clockN &lt;= 0</invariant>
+      <flow>clockN' == 1 &amp;
+xN' == 0 &amp;
+yN' == 0 &amp;
+thetaN' == 0 &amp;
+vN' == 0 &amp;
+deltaN' == 0 &amp;
+clockG' == 1 &amp;
+tdiffD' == 0</flow>
+    </location>
+    <location id="4" name="ZZN" x="94.0" y="506.0" width="106.0" height="178.0">
+      <invariant>clockN &lt;= 0</invariant>
+      <flow>clockN' == 1 &amp;
+xN' == 0 &amp;
+yN' == 0 &amp;
+thetaN' == 0 &amp;
+vN' == 0 &amp;
+deltaN' == 0 &amp;
+clockG' == 1 &amp;
+tdiffD' == 0</flow>
+    </location>
+    <transition source="2" target="5">
+      <label>choice</label>
+      <guard>clockN ==0.0</guard>
+      <assignment>clockN := 0</assignment>
+      <labelposition x="-94.0" y="-104.0" width="156.0" height="104.0" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == -0.523598 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.25</assignment>
+      <labelposition x="-82.0" y="-44.0" width="122.0" height="90.0" />
+      <middlepoint x="399.0" y="277.0" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == -0.261799 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.25</assignment>
+      <labelposition x="-20.0" y="-39.0" width="88.0" height="84.0" />
+      <middlepoint x="435.0" y="282.0" />
+    </transition>
+    <transition source="5" target="3">
+      <note>No guards set for velocity (vD or _f1) and turning rate (deltaD or _f2) as the DNN is trained respecting these bounds.</note>
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == 0.523598 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.25</assignment>
+      <labelposition x="-41.0" y="-75.0" width="98.0" height="112.0" />
+      <middlepoint x="566.0" y="296.0" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == 0.261799 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.25</assignment>
+      <labelposition x="2.0" y="-28.0" width="84.0" height="88.0" />
+      <middlepoint x="515.0" y="290.0" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == -0.523598 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.5</assignment>
+      <labelposition x="-44.0" y="-8.0" width="84.0" height="92.0" />
+      <middlepoint x="642.0" y="299.0" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == -0.261799 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.5</assignment>
+      <labelposition x="-19.0" y="-23.0" />
+      <middlepoint x="679.0" y="314.0" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == 0.261799 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.5</assignment>
+      <labelposition x="-32.0" y="-20.0" width="82.0" height="84.0" />
+      <middlepoint x="723.0" y="314.0" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == -0.523598 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.75</assignment>
+      <labelposition x="-29.0" y="-36.0" width="80.0" height="84.0" />
+      <middlepoint x="767.0" y="311.5" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == 0.523598 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.5</assignment>
+      <labelposition x="-20.0" y="-6.0" width="86.0" height="86.0" />
+      <middlepoint x="812.0" y="315.5" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == -0.261799 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.75</assignment>
+      <labelposition x="-63.0" y="-102.0" width="96.0" height="86.0" />
+      <middlepoint x="867.0" y="312.5" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == 0.261799 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.75</assignment>
+      <labelposition x="-67.0" y="19.0" width="102.0" height="90.0" />
+      <middlepoint x="906.0" y="315.5" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == -0.523598 &amp;
+clockN' == 0.0 &amp;
+vN' == 1.0</assignment>
+      <labelposition x="-69.0" y="6.0" />
+      <middlepoint x="998.0" y="326.5" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == -0.261799 &amp;
+clockN' == 0.0 &amp;
+vN' == 1.0</assignment>
+      <labelposition x="-84.0" y="33.0" width="50.0" height="74.0" />
+      <middlepoint x="1034.0" y="329.5" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == 0.261799 &amp;
+clockN' == 0.0 &amp;
+vN' == 1.0</assignment>
+      <labelposition x="-69.0" y="12.0" />
+      <middlepoint x="1085.0" y="331.0" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == 0.523598 &amp;
+clockN' == 0.0 &amp;
+vN' == 0.75</assignment>
+      <labelposition x="-35.0" y="-71.0" width="92.0" height="92.0" />
+      <middlepoint x="946.0" y="316.5" />
+    </transition>
+    <transition source="5" target="3">
+      <label>chosen</label>
+      <guard>clockN == 0</guard>
+      <assignment>deltaN' == 0.523598 &amp;
+clockN' == 0.0 &amp;
+vN' == 1.0</assignment>
+      <labelposition x="-57.0" y="24.0" />
+      <middlepoint x="1124.0" y="328.0" />
+    </transition>
+    <transition source="3" target="1">
+      <label>reset1</label>
+      <assignment>clockN:=0</assignment>
+      <labelposition x="-20.0" y="8.0" width="86.0" height="62.0" />
+      <middlepoint x="356.0" y="498.5" />
+    </transition>
+    <transition source="1" target="4">
+      <label>reset2</label>
+      <labelposition x="-18.0" y="-3.0" />
+    </transition>
+    <transition source="4" target="2">
+      <label>reset3</label>
+      <labelposition x="0.0" y="0.0" />
+    </transition>
+  </component>
+  <component id="A">
+    <param name="clockG" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="tdiffD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="clockD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="_f1" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="_f2" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="_f3" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="xD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="yD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="thetaD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="clock" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="L" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="choice" type="label" local="false" />
+    <param name="chosen" type="label" local="false" />
+    <param name="reset1" type="label" local="false" />
+    <param name="reset2" type="label" local="false" />
+    <param name="reset3" type="label" local="false" />
+    <param name="vD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="deltaD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="clockN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="xN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="yN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="thetaN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="vN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="deltaN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="total_distD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="wx_lastD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="wy_lastD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="pxD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="pyD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="D_wlastD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="DminD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="D_w0D" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="D_w1D" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="D_w2D" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="wx_0D" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="wx_1D" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="wx_2D" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="wy_0D" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="wy_1D" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="wy_2D" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="D_w01D" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="D_w12D" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="costD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="total_distN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="wx_lastN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="wy_lastN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="pxN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="pyN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="D_wlastN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="DminN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="D_w0N" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="D_w1N" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="D_w2N" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="wx_0N" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="wx_1N" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="wx_2N" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="wy_0N" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="wy_1N" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="wy_2N" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="D_w01N" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="D_w12N" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="costN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <bind component="D" as="D_1" x="677.0" y="171.0">
+      <map key="clockG">clockG</map>
+      <map key="tdiffD">tdiffD</map>
+      <map key="clockD">clockD</map>
+      <map key="_f1">_f1</map>
+      <map key="_f2">_f2</map>
+      <map key="_f3">_f3</map>
+      <map key="xD">xD</map>
+      <map key="yD">yD</map>
+      <map key="thetaD">thetaD</map>
+      <map key="clock">clock</map>
+      <map key="L">1</map>
+      <map key="choice">choice</map>
+      <map key="chosen">chosen</map>
+      <map key="reset1">reset1</map>
+      <map key="reset2">reset2</map>
+      <map key="reset3">reset3</map>
+      <map key="vD">vD</map>
+      <map key="deltaD">deltaD</map>
+    </bind>
+    <bind component="N" as="N_1" x="684.0" y="454.0">
+      <map key="clockG">clockG</map>
+      <map key="clockN">clockN</map>
+      <map key="_f1">_f1</map>
+      <map key="_f2">_f2</map>
+      <map key="_f3">_f3</map>
+      <map key="xN">xN</map>
+      <map key="yN">yN</map>
+      <map key="thetaN">thetaN</map>
+      <map key="clock">clock</map>
+      <map key="L">1</map>
+      <map key="choice">choice</map>
+      <map key="chosen">chosen</map>
+      <map key="reset1">reset1</map>
+      <map key="reset2">reset2</map>
+      <map key="reset3">reset3</map>
+      <map key="vN">vN</map>
+      <map key="deltaN">deltaN</map>
+      <map key="tdiffD">tdiffD</map>
+    </bind>
+    <bind component="C1" as="C1_1" x="892.0" y="723.0">
+      <map key="chosen">chosen</map>
+      <map key="reset1">reset1</map>
+      <map key="choice">choice</map>
+      <map key="reset2">reset2</map>
+      <map key="xD">xD</map>
+      <map key="yD">yD</map>
+      <map key="total_distD">total_distD</map>
+      <map key="wx_lastD">wx_lastD</map>
+      <map key="wy_lastD">wy_lastD</map>
+      <map key="pxD">pxD</map>
+      <map key="pyD">pyD</map>
+      <map key="D_wlastD">D_wlastD</map>
+      <map key="DminD">DminD</map>
+      <map key="D_w0D">D_w0D</map>
+      <map key="D_w1D">D_w1D</map>
+      <map key="D_w2D">D_w2D</map>
+      <map key="wx_0D">1.0395584540888</map>
+      <map key="wx_1D">2.0336832153790</map>
+      <map key="wx_2D">2.9389262614624</map>
+      <map key="wy_0D">10.677777777778</map>
+      <map key="wy_1D">11.377777777778</map>
+      <map key="wy_2D">12.1</map>
+      <map key="D_w01D">1.21584704671694</map>
+      <map key="D_w12D">1.15804572912888</map>
+      <map key="costD">costD</map>
+      <map key="reset3">reset3</map>
+    </bind>
+    <bind component="C2" as="C2_1" x="912.0" y="1076.0">
+      <map key="chosen">chosen</map>
+      <map key="reset1">reset1</map>
+      <map key="choice">choice</map>
+      <map key="xN">xN</map>
+      <map key="yN">yN</map>
+      <map key="total_distN">total_distN</map>
+      <map key="wx_lastN">wx_lastN</map>
+      <map key="wy_lastN">wy_lastN</map>
+      <map key="pxN">pxN</map>
+      <map key="pyN">pyN</map>
+      <map key="D_wlastN">D_wlastN</map>
+      <map key="DminN">DminN</map>
+      <map key="D_w0N">D_w0N</map>
+      <map key="D_w1N">D_w1N</map>
+      <map key="D_w2N">D_w2N</map>
+      <map key="wx_0N">1.0395584540888</map>
+      <map key="wx_1N">2.0336832153790</map>
+      <map key="wx_2N">2.9389262614624</map>
+      <map key="wy_0N">10.677777777778</map>
+      <map key="wy_1N">11.377777777778</map>
+      <map key="wy_2N">12.1</map>
+      <map key="D_w01N">1.21584704671694</map>
+      <map key="D_w12N">1.15804572912888</map>
+      <map key="costN">costN</map>
+      <map key="reset2">reset2</map>
+      <map key="reset3">reset3</map>
+    </bind>
+  </component>
+</sspaceex>
+
