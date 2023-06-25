@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" math="SpaceEx" version="0.2">
+  <component id="traffic_light_sys">
+    <note>Created by Hyst v1.6
+Hybrid Automaton in SpaceEx
+Converted from file: ../examples/Traffic_light/traffic_light.xml
+Command Line arguments: -v -i ../examples/Traffic_light/traffic_light.xml -p convert_havoc_flows "" -t spaceex "" -o ../examples/Traffic_light/traffic_light_product.xml</note>
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="go1" type="real"/>
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="go2" type="real"/>
+    <location id="1" name="red1_green2">
+      <invariant>true</invariant>
+      <flow>go1' == 0.0 &amp;
+ go2' == 0.0</flow>
+    </location>
+    <location id="2" name="red1_red2">
+      <invariant>true</invariant>
+      <flow>go1' == 0.0 &amp;
+ go2' == 0.0</flow>
+    </location>
+    <location id="3" name="green1_green2">
+      <invariant>true</invariant>
+      <flow>go1' == 0.0 &amp;
+ go2' == 0.0</flow>
+    </location>
+    <location id="4" name="green1_red2">
+      <invariant>true</invariant>
+      <flow>go1' == 0.0 &amp;
+ go2' == 0.0</flow>
+    </location>
+    <transition asap="false" bezier="false" source="1" target="3" timedriven="false">
+      <guard>go1 == 1.0</guard>
+      <labelposition/>
+      <middlepoint/>
+    </transition>
+    <transition asap="false" bezier="false" source="2" target="4" timedriven="false">
+      <guard>go1 == 1.0</guard>
+      <labelposition/>
+      <middlepoint/>
+    </transition>
+    <transition asap="false" bezier="false" source="3" target="1" timedriven="false">
+      <guard>go2 == 1.0</guard>
+      <labelposition/>
+      <middlepoint/>
+    </transition>
+    <transition asap="false" bezier="false" source="4" target="2" timedriven="false">
+      <guard>go2 == 1.0</guard>
+      <labelposition/>
+      <middlepoint/>
+    </transition>
+    <transition asap="false" bezier="false" source="1" target="2" timedriven="false">
+      <guard>go1 == 1.0</guard>
+      <labelposition/>
+      <middlepoint/>
+    </transition>
+    <transition asap="false" bezier="false" source="3" target="4" timedriven="false">
+      <guard>go1 == 1.0</guard>
+      <labelposition/>
+      <middlepoint/>
+    </transition>
+    <transition asap="false" bezier="false" source="2" target="1" timedriven="false">
+      <guard>go2 == 1.0</guard>
+      <labelposition/>
+      <middlepoint/>
+    </transition>
+    <transition asap="false" bezier="false" source="4" target="3" timedriven="false">
+      <guard>go2 == 1.0</guard>
+      <labelposition/>
+      <middlepoint/>
+    </transition>
+  </component>
+  <component id="traffic_light_net">
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="go1" type="real"/>
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="go2" type="real"/>
+    <bind as="traffic_light" component="traffic_light_sys">
+      <map key="go1">go1</map>
+      <map key="go2">go2</map>
+    </bind>
+  </component>
+</sspaceex>
+

@@ -1,0 +1,194 @@
+hybrid reachability
+{
+	 state var _f1, _f2, _f3, _f4, clockD, FD, posD, thetaD, dposD, dthetaD, lagrD, clockN, FN, posN, thetaN, dposN, dthetaN, lagrN, clock
+
+	setting
+	{
+		fixed steps 0.001
+		time 20
+		remainder estimation 1e-1
+		identity precondition 
+		gnuplot octagon lagrN, lagrD
+		fixed orders 3
+		cutoff 1e-18
+		precision 100
+		output autosig
+		max jumps 2000
+		print on
+	}
+
+	modes
+	{
+		_DNN1
+		{
+			nonpoly ode
+			{
+				dthetaD' = 0
+				dposD' = 0
+				clockD' = 0
+				posD' = 0
+				FN' = 0
+				_f2' = 0
+				_f1' = 0
+				thetaN' = 0
+				dposN' = 0
+				clock' = 1
+				_f4' = 0
+				_f3' = 0
+				posN' = 0
+				lagrN' = 0
+				clockN' = 0
+				lagrD' = 0
+				thetaD' = 0
+				FD' = 0
+				dthetaN' = 0
+			}
+			inv
+			{
+				clock <= 0
+			}
+		}
+		DNN1
+		{
+			nonpoly ode
+			{
+				dthetaD' = 0
+				dposD' = 0
+				clockD' = 0
+				posD' = 0
+				FN' = 0
+				_f2' = 0
+				_f1' = 0
+				thetaN' = 0
+				dposN' = 0
+				clock' = 1
+				_f4' = 0
+				_f3' = 0
+				posN' = 0
+				lagrN' = 0
+				clockN' = 0
+				lagrD' = 0
+				thetaD' = 0
+				FD' = 0
+				dthetaN' = 0
+			}
+			inv
+			{
+				clock <= 0
+			}
+		}
+		initD_initN
+		{
+			nonpoly ode
+			{
+				dthetaD' = 0.0
+				dposD' = 0.0
+				clockD' = 1.0
+				posD' = 0.0
+				FN' = 0.0
+				_f2' = 0.0
+				thetaN' = 0.0
+				dposN' = 0.0
+				_f1' = 0.0
+				clock' = 0.0
+				_f4' = 0.0
+				_f3' = 0.0
+				posN' = 0.0
+				lagrN' = 0.0
+				clockN' = 1.0
+				lagrD' = 0.0
+				thetaD' = 0.0
+				dthetaN' = 0.0
+				FD' = 0.0
+			}
+			inv
+			{
+				clockD <= 0.0
+				clockN <= 0.0
+			}
+		}
+		environmmentD_environmentN
+		{
+			nonpoly ode
+			{
+				dthetaD' = (-2.0 * cos(thetaD) * sin(thetaD) * dthetaD * dthetaD + FD * cos(thetaD) + 14.715 * sin(thetaD)) / (2.0 * (1.5 - 1.0 * cos(thetaD) * cos(thetaD)))
+				dposD' = (-2.0 * sin(thetaD) * dthetaD * dthetaD + 9.81 * cos(thetaD) * sin(thetaD) + FD) / (1.5 - 1.0 * cos(thetaD) * cos(thetaD))
+				clockD' = 1.0
+				posD' = dposD
+				FN' = 0.0
+				_f2' = 0.0
+				thetaN' = dthetaN
+				dposN' = (-2.0 * sin(thetaN) * dthetaN * dthetaN + 9.81 * cos(thetaN) * sin(thetaN) + FN) / (1.5 - 1.0 * cos(thetaN) * cos(thetaN))
+				_f1' = 0.0
+				clock' = 0.0
+				_f4' = 0.0
+				_f3' = 0.0
+				posN' = dposN
+				lagrN' = 2.0 * FN + 100.0 * posN * posN
+				clockN' = 1.0
+				lagrD' = 2.0 * FD + 100.0 * posD * posD
+				thetaD' = dthetaD
+				dthetaN' = (-2.0 * cos(thetaN) * sin(thetaN) * dthetaN * dthetaN + FN * cos(thetaN) + 14.715 * sin(thetaN)) / (2.0 * (1.5 - 1.0 * cos(thetaN) * cos(thetaN)))
+				FD' = 0.0
+			}
+			inv
+			{
+				clockD <= 0.04
+				clockN <= 0.04
+			}
+		}
+	}
+	jumps
+	{
+		_DNN1 -> DNN1
+		guard { }
+		reset { clock' := 0 }
+		interval aggregation
+		initD_initN -> _DNN1
+		guard { clockD = 0.0 clockN = 0.0 }
+		reset { clockD' := 0.0 clockN' := 0.0 _f2' := thetaD _f1' := posD _f4' := dthetaD _f3' := dposD }
+		interval aggregation
+		DNN1 -> environmmentD_environmentN
+		guard { clockD = 0.0 clockN = 0.0 }
+		reset { clockD' := 0.0 clockN' := 0.0 FN' := -2.0 FD' := _f1 }
+		interval aggregation
+		DNN1 -> environmmentD_environmentN
+		guard { clockD = 0.0 clockN = 0.0 }
+		reset { clockD' := 0.0 clockN' := 0.0 FN' := -1.0 FD' := _f1 }
+		interval aggregation
+		DNN1 -> environmmentD_environmentN
+		guard { clockD = 0.0 clockN = 0.0 }
+		reset { clockD' := 0.0 clockN' := 0.0 FN' := 0.0 FD' := _f1 }
+		interval aggregation
+		DNN1 -> environmmentD_environmentN
+		guard { clockD = 0.0 clockN = 0.0 }
+		reset { clockD' := 0.0 clockN' := 0.0 FN' := 1.0 FD' := _f1 }
+		interval aggregation
+		DNN1 -> environmmentD_environmentN
+		guard { clockD = 0.0  clockN = 0.0 }
+		reset { clockD' := 0.0 clockN' := 0.0 FN' := 2.0 FD' := _f1 }
+		interval aggregation
+		environmmentD_environmentN -> initD_initN
+		guard { clockD <= 0.04 clockN <= 0.04 }
+		reset { clockD' := 0.0 clockN' := 0.0 }
+		interval aggregation
+	}
+	init
+	{
+		initD_initN
+		{
+	                clock in [0, 0]
+			clockD in [0, 0]
+			clockN in [0, 0]
+			posD in [0.5, 0.5]
+			posN in [0.5, 0.5]
+		}
+	}
+}
+unsafe
+{
+	environmmentD_environmentN
+	{
+		lagrD - lagrN >= 100 && FD <= 2 & FD >= -2 
+	}
+}

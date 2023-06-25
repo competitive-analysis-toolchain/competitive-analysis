@@ -1,0 +1,2794 @@
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 1mode: initD_initN,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 0
+T::: domains size:   0
+T::: last flowpipe size: 4503157400
+T::: last domain size: 4503157424
+custom output: from: initD_initN, to: _DNN1, jumps execuded: 0, branch id: 1, jump id: 2 
+Dealing with the jump from initD_initN to _DNN1 ...
+jumps = 0
+branch id: 1
+_f1 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [-0.0000000000,  0.0000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [-0.0000000000,  0.0000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [-0.0000000000,  0.0000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [-0.0000000000,  0.0000000000]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5000000000,  0.5000000000]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [-0.0000000000,  0.0000000000]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [-0.0000000000,  0.0000000000]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [-0.0000000000,  0.0000000000]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-0.0000000000,  0.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [-0.0000000000,  0.0000000000]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [-0.0000000000,  0.0000009766]
+clockG remainder after reset: [-0.0000004883,  0.0000004883]
+clock bounds after reset: [-0.0000000000,  0.0000000000]
+clock remainder after reset: [-0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 1mode: _DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 1
+T::: domains size:   1
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: _DNN1, to: DNN1, jumps execuded: 1, branch id: 1, jump id: 1 
+Dealing with the jump from _DNN1 to DNN1 ...
+jumps = 1
+branch id: 1
+Loading neural networks...
+Jumping to layer 1
+Performing linear reset...
+Jumping to layer 2
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 3
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 4
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 5
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 6
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [-0.0000000000,  0.0000000000]
+clockD remainder after reset: [-0.0000000000,  0.0000000000]
+FD bounds after reset: [-0.0000000000,  0.0000000000]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5000000000,  0.5000000000]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [-0.0000000000,  0.0000000000]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [-0.0000000000,  0.0000000000]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [-0.0000000000,  0.0000000000]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [-0.0000000000,  0.0000000000]
+clockN remainder after reset: [-0.0000000000,  0.0000000000]
+FN bounds after reset: [-0.0000000000,  0.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [-0.0000000000,  0.0000000000]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [-0.0000000000,  0.0000019531]
+clockG remainder after reset: [-0.0000009766,  0.0000009766]
+clock bounds after reset: [ 0.0000000000,  0.0000000000]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 1mode: DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 2
+T::: domains size:   2
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 2, branch id: 1, jump id: 3 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 2
+branch id: 1
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5000000000,  0.5000000000]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [-0.0000000000,  0.0000000000]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [-0.0000000000,  0.0000000000]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [-0.0000000000,  0.0000000000]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-2.0000000000, -2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [-0.0000000000,  0.0000000000]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [-0.0000000000,  0.0000029297]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 2, branch id: 1, jump id: 4 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 2
+branch id: 1
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5000000000,  0.5000000000]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [-0.0000000000,  0.0000000000]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [-0.0000000000,  0.0000000000]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [-0.0000000000,  0.0000000000]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-1.0000000000, -1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [-0.0000000000,  0.0000000000]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [-0.0000000000,  0.0000029297]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 2, branch id: 1, jump id: 5 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 2
+branch id: 1
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5000000000,  0.5000000000]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [-0.0000000000,  0.0000000000]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [-0.0000000000,  0.0000000000]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [-0.0000000000,  0.0000000000]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 0.0000000000,  0.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [-0.0000000000,  0.0000000000]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [-0.0000000000,  0.0000029297]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 2, branch id: 1, jump id: 6 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 2
+branch id: 1
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5000000000,  0.5000000000]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [-0.0000000000,  0.0000000000]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [-0.0000000000,  0.0000000000]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [-0.0000000000,  0.0000000000]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 1.0000000000,  1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [-0.0000000000,  0.0000000000]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [-0.0000000000,  0.0000029297]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 2, branch id: 1, jump id: 7 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 2
+branch id: 1
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5000000000,  0.5000000000]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [-0.0000000000,  0.0000000000]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [-0.0000000000,  0.0000000000]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [-0.0000000000,  0.0000000000]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 2.0000000000,  2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [-0.0000000000,  0.0000000000]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [-0.0000000000,  0.0000029297]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: error1, jumps execuded: 2, branch id: 1, jump id: 8 
+Dealing with the jump from DNN1 to error1 ...
+jumps = 2
+branch id: 1
+No intersection detected.
+Done.
+custom output: from: DNN1, to: error2, jumps execuded: 2, branch id: 1, jump id: 9 
+Dealing with the jump from DNN1 to error2 ...
+jumps = 2
+branch id: 1
+No intersection detected.
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.001000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.002000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.003000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.004000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.005000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.006000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.007000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.008000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.009000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.010000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.011000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.012000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.013000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.014000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.015000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.016000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.017000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.018000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.019000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.020000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.021000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.022000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.023000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.024000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.025000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.026000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.027000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.028000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.029000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.030000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.031000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.032000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.033000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.034000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.035000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.036000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.037000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.038000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.039000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.040000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.040001,	step = 0.000001,	order = 3
+T::: flowpipes size: 3
+T::: domains size:   3
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: environmmentD_environmentN, to: initD_initN, jumps execuded: 3, branch id: 1, jump id: 10 
+Dealing with the jump from environmmentD_environmentN to initD_initN ...
+jumps = 3
+branch id: 1
+Entered a case that is not supported by Verisig (multiple intersected flowpipes).
+
+Initial conditions:
+intersected flowpipes = 2
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [ 0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [ 0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [ 0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [ 0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [ 0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [ 0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-2.0000000000, -2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4967956575,  0.4967959711]
+posN remainder after reset: [ 0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0016032185, -0.0016030614]
+thetaN remainder after reset: [ 0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.1604224943, -0.1604146203]
+dposN remainder after reset: [ 0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0803159974, -0.0803120450]
+dthetaN remainder after reset: [ 0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.8357179874,  0.8357583894]
+costN remainder after reset: [ 0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400039063]
+clockG remainder after reset: [ 0.0000000000,  0.0000000000]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.001000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.002000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.003000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.004000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.005000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.006000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.007000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.008000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.009000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.010000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.011000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.012000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.013000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.014000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.015000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.016000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.017000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.018000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.019000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.020000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.021000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.022000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.023000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.024000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.025000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.026000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.027000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.028000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.029000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.030000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.031000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.032000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.033000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.034000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.035000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.036000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.037000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.038000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.039000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.040000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 2mode: environmmentD_environmentN,	time = 0.040001,	step = 0.000001,	order = 3
+T::: flowpipes size: 4
+T::: domains size:   4
+T::: last flowpipe size: 41
+T::: last domain size: 41
+TEST 20 20
+custom output: from: environmmentD_environmentN, to: initD_initN, jumps execuded: 3, branch id: 2, jump id: 10 
+Dealing with the jump from environmmentD_environmentN to initD_initN ...
+jumps = 3
+branch id: 2
+Entered a case that is not supported by Verisig (multiple intersected flowpipes).
+
+Initial conditions:
+intersected flowpipes = 2
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [ 0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [ 0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [ 0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [ 0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [ 0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [ 0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-1.0000000000, -1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4983978275,  0.4983979843]
+posN remainder after reset: [ 0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0008016099, -0.0008015314]
+thetaN remainder after reset: [ 0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0802114331, -0.0802074960]
+dposN remainder after reset: [ 0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0401580994, -0.0401561232]
+dthetaN remainder after reset: [ 0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9178447345,  0.9178893487]
+costN remainder after reset: [ 0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400039063]
+clockG remainder after reset: [ 0.0000000000,  0.0000000000]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.001000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.002000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.003000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.004000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.005000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.006000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.007000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.008000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.009000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.010000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.011000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.012000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.013000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.014000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.015000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.016000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.017000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.018000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.019000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.020000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.021000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.022000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.023000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.024000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.025000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.026000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.027000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.028000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.029000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.030000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.031000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.032000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.033000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.034000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.035000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.036000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.037000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.038000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.039000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.040000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 3mode: environmmentD_environmentN,	time = 0.040001,	step = 0.000001,	order = 3
+T::: flowpipes size: 5
+T::: domains size:   5
+T::: last flowpipe size: 41
+T::: last domain size: 41
+TEST 20 20
+custom output: from: environmmentD_environmentN, to: initD_initN, jumps execuded: 3, branch id: 3, jump id: 10 
+Dealing with the jump from environmmentD_environmentN to initD_initN ...
+jumps = 3
+branch id: 3
+Entered a case that is not supported by Verisig (multiple intersected flowpipes).
+
+Initial conditions:
+intersected flowpipes = 2
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [ 0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [ 0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [ 0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [ 0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [ 0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [ 0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 0.0000000000,  0.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [ 0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0000000000,  0.0000000000]
+thetaN remainder after reset: [ 0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.0000000000,  0.0000000000]
+dposN remainder after reset: [ 0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [ 0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9999755859,  1.0000244141]
+costN remainder after reset: [ 0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400039063]
+clockG remainder after reset: [ 0.0000000000,  0.0000000000]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.001000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.002000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.003000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.004000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.005000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.006000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.007000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.008000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.009000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.010000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.011000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.012000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.013000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.014000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.015000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.016000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.017000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.018000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.019000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.020000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.021000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.022000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.023000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.024000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.025000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.026000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.027000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.028000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.029000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.030000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.031000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.032000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.033000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.034000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.035000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.036000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.037000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.038000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.039000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.040000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 4mode: environmmentD_environmentN,	time = 0.040001,	step = 0.000001,	order = 3
+T::: flowpipes size: 6
+T::: domains size:   6
+T::: last flowpipe size: 41
+T::: last domain size: 41
+TEST 20 20
+custom output: from: environmmentD_environmentN, to: initD_initN, jumps execuded: 3, branch id: 4, jump id: 10 
+Dealing with the jump from environmmentD_environmentN to initD_initN ...
+jumps = 3
+branch id: 4
+Entered a case that is not supported by Verisig (multiple intersected flowpipes).
+
+Initial conditions:
+intersected flowpipes = 2
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [ 0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [ 0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [ 0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [ 0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [ 0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [ 0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 1.0000000000,  1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5016020157,  0.5016021725]
+posN remainder after reset: [ 0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0008015314,  0.0008016099]
+thetaN remainder after reset: [ 0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.0802074960,  0.0802114331]
+dposN remainder after reset: [ 0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0401561232,  0.0401580994]
+dthetaN remainder after reset: [ 0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.0821105360,  1.0821635847]
+costN remainder after reset: [ 0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400039063]
+clockG remainder after reset: [ 0.0000000000,  0.0000000000]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.001000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.002000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.003000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.004000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.005000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.006000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.007000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.008000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.009000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.010000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.011000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.012000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.013000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.014000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.015000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.016000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.017000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.018000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.019000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.020000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.021000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.022000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.023000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.024000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.025000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.026000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.027000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.028000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.029000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.030000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.031000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.032000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.033000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.034000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.035000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.036000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.037000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.038000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.039000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.040000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 5mode: environmmentD_environmentN,	time = 0.040001,	step = 0.000001,	order = 3
+T::: flowpipes size: 7
+T::: domains size:   7
+T::: last flowpipe size: 41
+T::: last domain size: 41
+TEST 20 20
+custom output: from: environmmentD_environmentN, to: initD_initN, jumps execuded: 3, branch id: 5, jump id: 10 
+Dealing with the jump from environmmentD_environmentN to initD_initN ...
+jumps = 3
+branch id: 5
+Entered a case that is not supported by Verisig (multiple intersected flowpipes).
+
+Initial conditions:
+intersected flowpipes = 2
+_f1 bounds after reset: [ 0.9986637145,  0.9986637145]
+_f1 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [ 0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [ 0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [ 0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [ 0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [ 0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [ 0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 2.0000000000,  2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5032040289,  0.5032043425]
+posN remainder after reset: [ 0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0016030614,  0.0016032185]
+thetaN remainder after reset: [ 0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.1604146203,  0.1604224943]
+dposN remainder after reset: [ 0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0803120450,  0.0803159974]
+dthetaN remainder after reset: [ 0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.1642495877,  1.1643068585]
+costN remainder after reset: [ 0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400039063]
+clockG remainder after reset: [ 0.0000000000,  0.0000000000]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 1mode: initD_initN,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 8
+T::: domains size:   8
+T::: last flowpipe size: 41
+T::: last domain size: 41
+TEST 20 20
+custom output: from: initD_initN, to: _DNN1, jumps execuded: 4, branch id: 1, jump id: 2 
+Dealing with the jump from initD_initN to _DNN1 ...
+jumps = 4
+branch id: 1
+_f1 bounds after reset: [ 0.5031954659,  0.5031957786]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.0015987771,  0.0015989338]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.1599859035,  0.1599937565]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.0800974068,  0.0801013486]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-2.0000000000, -2.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4967956575,  0.4967959711]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0016032185, -0.0016030614]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.1604224943, -0.1604146203]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0803159974, -0.0803120450]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.8357179874,  0.8357583894]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400048828]
+clockG remainder after reset: [-0.0000004883,  0.0000004883]
+clock bounds after reset: [-0.0000000000,  0.0000000000]
+clock remainder after reset: [-0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 2mode: initD_initN,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 9
+T::: domains size:   9
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: initD_initN, to: _DNN1, jumps execuded: 4, branch id: 2, jump id: 2 
+Dealing with the jump from initD_initN to _DNN1 ...
+jumps = 4
+branch id: 2
+_f1 bounds after reset: [ 0.5031954659,  0.5031957786]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.0015987771,  0.0015989338]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.1599859035,  0.1599937565]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.0800974068,  0.0801013486]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-1.0000000000, -1.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4983978275,  0.4983979843]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0008016099, -0.0008015314]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0802114331, -0.0802074960]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0401580994, -0.0401561232]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9178447345,  0.9178893487]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400048828]
+clockG remainder after reset: [-0.0000004883,  0.0000004883]
+clock bounds after reset: [-0.0000000000,  0.0000000000]
+clock remainder after reset: [-0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 3mode: initD_initN,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 10
+T::: domains size:   10
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: initD_initN, to: _DNN1, jumps execuded: 4, branch id: 3, jump id: 2 
+Dealing with the jump from initD_initN to _DNN1 ...
+jumps = 4
+branch id: 3
+_f1 bounds after reset: [ 0.5031954659,  0.5031957786]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.0015987771,  0.0015989338]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.1599859035,  0.1599937565]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.0800974068,  0.0801013486]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-0.0000000000,  0.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9999755859,  1.0000244141]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400048828]
+clockG remainder after reset: [-0.0000004883,  0.0000004883]
+clock bounds after reset: [-0.0000000000,  0.0000000000]
+clock remainder after reset: [-0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 4mode: initD_initN,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 11
+T::: domains size:   11
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: initD_initN, to: _DNN1, jumps execuded: 4, branch id: 4, jump id: 2 
+Dealing with the jump from initD_initN to _DNN1 ...
+jumps = 4
+branch id: 4
+_f1 bounds after reset: [ 0.5031954659,  0.5031957786]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.0015987771,  0.0015989338]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.1599859035,  0.1599937565]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.0800974068,  0.0801013486]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 1.0000000000,  1.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5016020157,  0.5016021725]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0008015314,  0.0008016099]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.0802074960,  0.0802114331]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0401561232,  0.0401580994]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.0821105360,  1.0821635847]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400048828]
+clockG remainder after reset: [-0.0000004883,  0.0000004883]
+clock bounds after reset: [-0.0000000000,  0.0000000000]
+clock remainder after reset: [-0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 5mode: initD_initN,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 12
+T::: domains size:   12
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: initD_initN, to: _DNN1, jumps execuded: 4, branch id: 5, jump id: 2 
+Dealing with the jump from initD_initN to _DNN1 ...
+jumps = 4
+branch id: 5
+_f1 bounds after reset: [ 0.5031954659,  0.5031957786]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.0015987771,  0.0015989338]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.1599859035,  0.1599937565]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.0800974068,  0.0801013486]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 2.0000000000,  2.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5032040289,  0.5032043425]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0016030614,  0.0016032185]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.1604146203,  0.1604224943]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0803120450,  0.0803159974]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.1642495877,  1.1643068585]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400048828]
+clockG remainder after reset: [-0.0000004883,  0.0000004883]
+clock bounds after reset: [-0.0000000000,  0.0000000000]
+clock remainder after reset: [-0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 1mode: _DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 13
+T::: domains size:   13
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: _DNN1, to: DNN1, jumps execuded: 5, branch id: 1, jump id: 1 
+Dealing with the jump from _DNN1 to DNN1 ...
+jumps = 5
+branch id: 1
+Jumping to layer 1
+Performing linear reset...
+Jumping to layer 2
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 3
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 4
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 5
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 6
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [-0.0000000000,  0.0000000000]
+clockD remainder after reset: [-0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [-0.0000000000,  0.0000000000]
+clockN remainder after reset: [-0.0000000000,  0.0000000000]
+FN bounds after reset: [-2.0000000000, -2.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4967956575,  0.4967959711]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0016032185, -0.0016030614]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.1604224943, -0.1604146203]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0803159974, -0.0803120450]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.8357179874,  0.8357583894]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400058594]
+clockG remainder after reset: [-0.0000009766,  0.0000009766]
+clock bounds after reset: [ 0.0000000000,  0.0000000000]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 2mode: _DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 14
+T::: domains size:   14
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: _DNN1, to: DNN1, jumps execuded: 5, branch id: 2, jump id: 1 
+Dealing with the jump from _DNN1 to DNN1 ...
+jumps = 5
+branch id: 2
+Jumping to layer 1
+Performing linear reset...
+Jumping to layer 2
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 3
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 4
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 5
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 6
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [-0.0000000000,  0.0000000000]
+clockD remainder after reset: [-0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [-0.0000000000,  0.0000000000]
+clockN remainder after reset: [-0.0000000000,  0.0000000000]
+FN bounds after reset: [-1.0000000000, -1.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4983978275,  0.4983979843]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0008016099, -0.0008015314]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0802114331, -0.0802074960]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0401580994, -0.0401561232]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9178447345,  0.9178893487]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400058594]
+clockG remainder after reset: [-0.0000009766,  0.0000009766]
+clock bounds after reset: [ 0.0000000000,  0.0000000000]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 3mode: _DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 15
+T::: domains size:   15
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: _DNN1, to: DNN1, jumps execuded: 5, branch id: 3, jump id: 1 
+Dealing with the jump from _DNN1 to DNN1 ...
+jumps = 5
+branch id: 3
+Jumping to layer 1
+Performing linear reset...
+Jumping to layer 2
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 3
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 4
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 5
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 6
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [-0.0000000000,  0.0000000000]
+clockD remainder after reset: [-0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [-0.0000000000,  0.0000000000]
+clockN remainder after reset: [-0.0000000000,  0.0000000000]
+FN bounds after reset: [-0.0000000000,  0.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9999755859,  1.0000244141]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400058594]
+clockG remainder after reset: [-0.0000009766,  0.0000009766]
+clock bounds after reset: [ 0.0000000000,  0.0000000000]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 4mode: _DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 16
+T::: domains size:   16
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: _DNN1, to: DNN1, jumps execuded: 5, branch id: 4, jump id: 1 
+Dealing with the jump from _DNN1 to DNN1 ...
+jumps = 5
+branch id: 4
+Jumping to layer 1
+Performing linear reset...
+Jumping to layer 2
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 3
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 4
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 5
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 6
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [-0.0000000000,  0.0000000000]
+clockD remainder after reset: [-0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [-0.0000000000,  0.0000000000]
+clockN remainder after reset: [-0.0000000000,  0.0000000000]
+FN bounds after reset: [ 1.0000000000,  1.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5016020157,  0.5016021725]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0008015314,  0.0008016099]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.0802074960,  0.0802114331]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0401561232,  0.0401580994]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.0821105360,  1.0821635847]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400058594]
+clockG remainder after reset: [-0.0000009766,  0.0000009766]
+clock bounds after reset: [ 0.0000000000,  0.0000000000]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 5mode: _DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 17
+T::: domains size:   17
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: _DNN1, to: DNN1, jumps execuded: 5, branch id: 5, jump id: 1 
+Dealing with the jump from _DNN1 to DNN1 ...
+jumps = 5
+branch id: 5
+Jumping to layer 1
+Performing linear reset...
+Jumping to layer 2
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 3
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 4
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 5
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+Jumping to layer 6
+Performing linear reset...
+Performing preconditioning...
+Performing activation reset...
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [ 0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [ 0.0000000000,  0.0000000000]
+clockD bounds after reset: [-0.0000000000,  0.0000000000]
+clockD remainder after reset: [-0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548579,  1.9946548579]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [-0.0000000000,  0.0000000000]
+clockN remainder after reset: [-0.0000000000,  0.0000000000]
+FN bounds after reset: [ 2.0000000000,  2.0000000000]
+FN remainder after reset: [-0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5032040289,  0.5032043425]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0016030614,  0.0016032185]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.1604146203,  0.1604224943]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0803120450,  0.0803159974]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.1642495877,  1.1643068585]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400058594]
+clockG remainder after reset: [-0.0000009766,  0.0000009766]
+clock bounds after reset: [ 0.0000000000,  0.0000000000]
+clock remainder after reset: [ 0.0000000000,  0.0000000000]
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 1mode: DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 18
+T::: domains size:   18
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 1, jump id: 3 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 1
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-2.0000000000, -2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4967956575,  0.4967959711]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0016032185, -0.0016030614]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.1604224943, -0.1604146203]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0803159974, -0.0803120450]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.8357179874,  0.8357583894]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 1, jump id: 4 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 1
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-1.0000000000, -1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4967956575,  0.4967959711]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0016032185, -0.0016030614]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.1604224943, -0.1604146203]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0803159974, -0.0803120450]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.8357179874,  0.8357583894]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 1, jump id: 5 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 1
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 0.0000000000,  0.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4967956575,  0.4967959711]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0016032185, -0.0016030614]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.1604224943, -0.1604146203]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0803159974, -0.0803120450]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.8357179874,  0.8357583894]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 1, jump id: 6 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 1
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 1.0000000000,  1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4967956575,  0.4967959711]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0016032185, -0.0016030614]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.1604224943, -0.1604146203]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0803159974, -0.0803120450]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.8357179874,  0.8357583894]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 1, jump id: 7 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 1
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 2.0000000000,  2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4967956575,  0.4967959711]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0016032185, -0.0016030614]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.1604224943, -0.1604146203]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0803159974, -0.0803120450]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.8357179874,  0.8357583894]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: error1, jumps execuded: 6, branch id: 1, jump id: 8 
+Dealing with the jump from DNN1 to error1 ...
+jumps = 6
+branch id: 1
+No intersection detected.
+Done.
+custom output: from: DNN1, to: error2, jumps execuded: 6, branch id: 1, jump id: 9 
+Dealing with the jump from DNN1 to error2 ...
+jumps = 6
+branch id: 1
+No intersection detected.
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 2mode: DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 19
+T::: domains size:   19
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 2, jump id: 3 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 2
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-2.0000000000, -2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4983978275,  0.4983979843]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0008016099, -0.0008015314]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0802114331, -0.0802074960]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0401580994, -0.0401561232]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9178447345,  0.9178893487]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 2, jump id: 4 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 2
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-1.0000000000, -1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4983978275,  0.4983979843]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0008016099, -0.0008015314]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0802114331, -0.0802074960]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0401580994, -0.0401561232]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9178447345,  0.9178893487]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 2, jump id: 5 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 2
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 0.0000000000,  0.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4983978275,  0.4983979843]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0008016099, -0.0008015314]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0802114331, -0.0802074960]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0401580994, -0.0401561232]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9178447345,  0.9178893487]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 2, jump id: 6 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 2
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 1.0000000000,  1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4983978275,  0.4983979843]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0008016099, -0.0008015314]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0802114331, -0.0802074960]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0401580994, -0.0401561232]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9178447345,  0.9178893487]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 2, jump id: 7 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 2
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 2.0000000000,  2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.4983978275,  0.4983979843]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0008016099, -0.0008015314]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0802114331, -0.0802074960]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0401580994, -0.0401561232]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9178447345,  0.9178893487]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: error1, jumps execuded: 6, branch id: 2, jump id: 8 
+Dealing with the jump from DNN1 to error1 ...
+jumps = 6
+branch id: 2
+No intersection detected.
+Done.
+custom output: from: DNN1, to: error2, jumps execuded: 6, branch id: 2, jump id: 9 
+Dealing with the jump from DNN1 to error2 ...
+jumps = 6
+branch id: 2
+No intersection detected.
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 3mode: DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 20
+T::: domains size:   20
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 3, jump id: 3 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 3
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-2.0000000000, -2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9999755859,  1.0000244141]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 3, jump id: 4 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 3
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-1.0000000000, -1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9999755859,  1.0000244141]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 3, jump id: 5 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 3
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 0.0000000000,  0.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9999755859,  1.0000244141]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 3, jump id: 6 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 3
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 1.0000000000,  1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9999755859,  1.0000244141]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 3, jump id: 7 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 3
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 2.0000000000,  2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5000000000,  0.5000000000]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [-0.0000000000,  0.0000000000]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [-0.0000000000,  0.0000000000]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [-0.0000000000,  0.0000000000]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 0.9999755859,  1.0000244141]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: error1, jumps execuded: 6, branch id: 3, jump id: 8 
+Dealing with the jump from DNN1 to error1 ...
+jumps = 6
+branch id: 3
+No intersection detected.
+Done.
+custom output: from: DNN1, to: error2, jumps execuded: 6, branch id: 3, jump id: 9 
+Dealing with the jump from DNN1 to error2 ...
+jumps = 6
+branch id: 3
+No intersection detected.
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 4mode: DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 21
+T::: domains size:   21
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 4, jump id: 3 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 4
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-2.0000000000, -2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5016020157,  0.5016021725]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0008015314,  0.0008016099]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.0802074960,  0.0802114331]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0401561232,  0.0401580994]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.0821105360,  1.0821635847]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 4, jump id: 4 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 4
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-1.0000000000, -1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5016020157,  0.5016021725]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0008015314,  0.0008016099]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.0802074960,  0.0802114331]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0401561232,  0.0401580994]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.0821105360,  1.0821635847]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 4, jump id: 5 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 4
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 0.0000000000,  0.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5016020157,  0.5016021725]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0008015314,  0.0008016099]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.0802074960,  0.0802114331]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0401561232,  0.0401580994]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.0821105360,  1.0821635847]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 4, jump id: 6 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 4
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 1.0000000000,  1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5016020157,  0.5016021725]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0008015314,  0.0008016099]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.0802074960,  0.0802114331]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0401561232,  0.0401580994]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.0821105360,  1.0821635847]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 4, jump id: 7 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 4
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 2.0000000000,  2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5016020157,  0.5016021725]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0008015314,  0.0008016099]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.0802074960,  0.0802114331]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0401561232,  0.0401580994]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.0821105360,  1.0821635847]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: error1, jumps execuded: 6, branch id: 4, jump id: 8 
+Dealing with the jump from DNN1 to error1 ...
+jumps = 6
+branch id: 4
+No intersection detected.
+Done.
+custom output: from: DNN1, to: error2, jumps execuded: 6, branch id: 4, jump id: 9 
+Dealing with the jump from DNN1 to error2 ...
+jumps = 6
+branch id: 4
+No intersection detected.
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 5mode: DNN1,	time = 0.000001,	step = 0.000001,	order = 3
+T::: flowpipes size: 22
+T::: domains size:   22
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 5, jump id: 3 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 5
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-2.0000000000, -2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5032040289,  0.5032043425]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0016030614,  0.0016032185]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.1604146203,  0.1604224943]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0803120450,  0.0803159974]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.1642495877,  1.1643068585]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 5, jump id: 4 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 5
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [-1.0000000000, -1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5032040289,  0.5032043425]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0016030614,  0.0016032185]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.1604146203,  0.1604224943]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0803120450,  0.0803159974]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.1642495877,  1.1643068585]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 5, jump id: 5 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 5
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 0.0000000000,  0.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5032040289,  0.5032043425]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0016030614,  0.0016032185]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.1604146203,  0.1604224943]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0803120450,  0.0803159974]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.1642495877,  1.1643068585]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 5, jump id: 6 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 5
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 1.0000000000,  1.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5032040289,  0.5032043425]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0016030614,  0.0016032185]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.1604146203,  0.1604224943]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0803120450,  0.0803159974]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.1642495877,  1.1643068585]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: environmmentD_environmentN, jumps execuded: 6, branch id: 5, jump id: 7 
+Dealing with the jump from DNN1 to environmmentD_environmentN ...
+jumps = 6
+branch id: 5
+_f1 bounds after reset: [ 0.9986637073,  0.9986637073]
+_f1 remainder after reset: [-0.0000000000,  0.0000000000]
+_f2 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f2 remainder after reset: [-0.0000000000,  0.0000000000]
+_f3 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f3 remainder after reset: [-0.0000000000,  0.0000000000]
+_f4 bounds after reset: [ 0.5000000000,  0.5000000000]
+_f4 remainder after reset: [-0.0000000000,  0.0000000000]
+clockD bounds after reset: [ 0.0000000000,  0.0000000000]
+clockD remainder after reset: [ 0.0000000000,  0.0000000000]
+FD bounds after reset: [ 1.9946548293,  1.9946548293]
+FD remainder after reset: [-0.0000000000,  0.0000000000]
+posD bounds after reset: [ 0.5031954659,  0.5031957786]
+posD remainder after reset: [-0.0000000000,  0.0000000000]
+thetaD bounds after reset: [ 0.0015987771,  0.0015989338]
+thetaD remainder after reset: [-0.0000000000,  0.0000000000]
+dposD bounds after reset: [ 0.1599859035,  0.1599937565]
+dposD remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaD bounds after reset: [ 0.0800974068,  0.0801013486]
+dthetaD remainder after reset: [-0.0000000000,  0.0000000000]
+costD bounds after reset: [ 1.1638105319,  1.1638677802]
+costD remainder after reset: [-0.0000000000,  0.0000000000]
+clockN bounds after reset: [ 0.0000000000,  0.0000000000]
+clockN remainder after reset: [ 0.0000000000,  0.0000000000]
+FN bounds after reset: [ 2.0000000000,  2.0000000000]
+FN remainder after reset: [ 0.0000000000,  0.0000000000]
+posN bounds after reset: [ 0.5032040289,  0.5032043425]
+posN remainder after reset: [-0.0000000000,  0.0000000000]
+thetaN bounds after reset: [ 0.0016030614,  0.0016032185]
+thetaN remainder after reset: [-0.0000000000,  0.0000000000]
+dposN bounds after reset: [ 0.1604146203,  0.1604224943]
+dposN remainder after reset: [-0.0000000000,  0.0000000000]
+dthetaN bounds after reset: [ 0.0803120450,  0.0803159974]
+dthetaN remainder after reset: [-0.0000000000,  0.0000000000]
+costN bounds after reset: [ 1.1642495877,  1.1643068585]
+costN remainder after reset: [-0.0000000000,  0.0000000000]
+clockG bounds after reset: [ 0.0399990234,  0.0400068359]
+clockG remainder after reset: [-0.0000014648,  0.0000014648]
+clock bounds after reset: [-0.0000000000,  0.0000009766]
+clock remainder after reset: [-0.0000004883,  0.0000004883]
+Done.
+custom output: from: DNN1, to: error1, jumps execuded: 6, branch id: 5, jump id: 8 
+Dealing with the jump from DNN1 to error1 ...
+jumps = 6
+branch id: 5
+No intersection detected.
+Done.
+custom output: from: DNN1, to: error2, jumps execuded: 6, branch id: 5, jump id: 9 
+Dealing with the jump from DNN1 to error2 ...
+jumps = 6
+branch id: 5
+No intersection detected.
+Done.
+T::nonpoly taylor case
+T::uniform case
+T::reach_continuous_non_polynomial_taylor fixed step sizes and orders 1T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.001000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.002000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.003000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.004000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.005000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.006000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.007000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.008000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.009000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.010000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.011000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.012000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.013000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.014000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.015000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.016000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.017000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.018000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1mode: environmmentD_environmentN,	time = 0.019000,	step = 0.001000,	order = 3
+T::Printing fp to file with branchid: 1T::: flowpipes size: 23
+T::: domains size:   23
+T::: last flowpipe size: 1
+T::: last domain size: 1
+TEST 20 20
+TTTTT:: result on uncompleted_safe or completed_unsafe1
+TTTTT:: 1
+
+Computation completed: 243 flowpipe(s) computed.
+
+[1mResult of the safety verification on the computed flowpipes: [0m[1m[31mUNSAFE
+
+[0mTotal time cost:[1m 61.326973[0m seconds.
+
+Preparing for plotting and dumping...
+[1m%100
+[0mDone.
+Generating the plotting file...
+[1m%[0m[1m  0[0m[1m%[0m[1m  0[0m[1m%[0m[1m  1[0m[1m%[0m[1m  1[0m[1m%[0m[1m  2[0m[1m%[0m[1m  2[0m[1m%[0m[1m  2[0m[1m%[0m[1m  3[0m[1m%[0m[1m  3[0m[1m%[0m[1m  4[0m[1m%[0m[1m  4[0m[1m%[0m[1m  4[0m[1m%[0m[1m  5[0m[1m%[0m[1m  5[0m[1m%[0m[1m  6[0m[1m%[0m[1m  6[0m[1m%[0m[1m  6[0m[1m%[0m[1m  7[0m[1m%[0m[1m  7[0m[1m%[0m[1m  8[0m[1m%[0m[1m  8[0m[1m%[0m[1m  9[0m[1m%[0m[1m  9[0m[1m%[0m[1m  9[0m[1m%[0m[1m 10[0m[1m%[0m[1m 10[0m[1m%[0m[1m 11[0m[1m%[0m[1m 11[0m[1m%[0m[1m 11[0m[1m%[0m[1m 12[0m[1m%[0m[1m 12[0m[1m%[0m[1m 13[0m[1m%[0m[1m 13[0m[1m%[0m[1m 13[0m[1m%[0m[1m 14[0m[1m%[0m[1m 14[0m[1m%[0m[1m 15[0m[1m%[0m[1m 15[0m[1m%[0m[1m 16[0m[1m%[0m[1m 16[0m[1m%[0m[1m 16[0m[1m%[0m[1m 17[0m[1m%[0m[1m 17[0m[1m%[0m[1m 18[0m[1m%[0m[1m 18[0m[1m%[0m[1m 18[0m[1m%[0m[1m 19[0m[1m%[0m[1m 19[0m[1m%[0m[1m 20[0m[1m%[0m[1m 20[0m[1m%[0m[1m 20[0m[1m%[0m[1m 21[0m[1m%[0m[1m 21[0m[1m%[0m[1m 22[0m[1m%[0m[1m 22[0m[1m%[0m[1m 23[0m[1m%[0m[1m 23[0m[1m%[0m[1m 23[0m[1m%[0m[1m 24[0m[1m%[0m[1m 24[0m[1m%[0m[1m 25[0m[1m%[0m[1m 25[0m[1m%[0m[1m 25[0m[1m%[0m[1m 26[0m[1m%[0m[1m 26[0m[1m%[0m[1m 27[0m[1m%[0m[1m 27[0m[1m%[0m[1m 27[0m[1m%[0m[1m 28[0m[1m%[0m[1m 28[0m[1m%[0m[1m 29[0m[1m%[0m[1m 29[0m[1m%[0m[1m 30[0m[1m%[0m[1m 30[0m[1m%[0m[1m 30[0m[1m%[0m[1m 31[0m[1m%[0m[1m 31[0m[1m%[0m[1m 32[0m[1m%[0m[1m 32[0m[1m%[0m[1m 32[0m[1m%[0m[1m 33[0m[1m%[0m[1m 33[0m[1m%[0m[1m 34[0m[1m%[0m[1m 34[0m[1m%[0m[1m 34[0m[1m%[0m[1m 35[0m[1m%[0m[1m 35[0m[1m%[0m[1m 36[0m[1m%[0m[1m 36[0m[1m%[0m[1m 37[0m[1m%[0m[1m 37[0m[1m%[0m[1m 37[0m[1m%[0m[1m 38[0m[1m%[0m[1m 38[0m[1m%[0m[1m 39[0m[1m%[0m[1m 39[0m[1m%[0m[1m 39[0m[1m%[0m[1m 40[0m[1m%[0m[1m 40[0m[1m%[0m[1m 41[0m[1m%[0m[1m 41[0m[1m%[0m[1m 41[0m[1m%[0m[1m 42[0m[1m%[0m[1m 42[0m[1m%[0m[1m 43[0m[1m%[0m[1m 43[0m[1m%[0m[1m 44[0m[1m%[0m[1m 44[0m[1m%[0m[1m 44[0m[1m%[0m[1m 45[0m[1m%[0m[1m 45[0m[1m%[0m[1m 46[0m[1m%[0m[1m 46[0m[1m%[0m[1m 46[0m[1m%[0m[1m 47[0m[1m%[0m[1m 47[0m[1m%[0m[1m 48[0m[1m%[0m[1m 48[0m[1m%[0m[1m 48[0m[1m%[0m[1m 49[0m[1m%[0m[1m 49[0m[1m%[0m[1m 50[0m[1m%[0m[1m 50[0m[1m%[0m[1m 51[0m[1m%[0m[1m 51[0m[1m%[0m[1m 51[0m[1m%[0m[1m 52[0m[1m%[0m[1m 52[0m[1m%[0m[1m 53[0m[1m%[0m[1m 53[0m[1m%[0m[1m 53[0m[1m%[0m[1m 54[0m[1m%[0m[1m 54[0m[1m%[0m[1m 55[0m[1m%[0m[1m 55[0m[1m%[0m[1m 55[0m[1m%[0m[1m 56[0m[1m%[0m[1m 56[0m[1m%[0m[1m 57[0m[1m%[0m[1m 57[0m[1m%[0m[1m 58[0m[1m%[0m[1m 58[0m[1m%[0m[1m 58[0m[1m%[0m[1m 59[0m[1m%[0m[1m 59[0m[1m%[0m[1m 60[0m[1m%[0m[1m 60[0m[1m%[0m[1m 60[0m[1m%[0m[1m 61[0m[1m%[0m[1m 61[0m[1m%[0m[1m 62[0m[1m%[0m[1m 62[0m[1m%[0m[1m 62[0m[1m%[0m[1m 63[0m[1m%[0m[1m 63[0m[1m%[0m[1m 64[0m[1m%[0m[1m 64[0m[1m%[0m[1m 65[0m[1m%[0m[1m 65[0m[1m%[0m[1m 65[0m[1m%[0m[1m 66[0m[1m%[0m[1m 66[0m[1m%[0m[1m 67[0m[1m%[0m[1m 67[0m[1m%[0m[1m 67[0m[1m%[0m[1m 68[0m[1m%[0m[1m 68[0m[1m%[0m[1m 69[0m[1m%[0m[1m 69[0m[1m%[0m[1m 69[0m[1m%[0m[1m 70[0m[1m%[0m[1m 70[0m[1m%[0m[1m 71[0m[1m%[0m[1m 71[0m[1m%[0m[1m 72[0m[1m%[0m[1m 72[0m[1m%[0m[1m 72[0m[1m%[0m[1m 73[0m[1m%[0m[1m 73[0m[1m%[0m[1m 74[0m[1m%[0m[1m 74[0m[1m%[0m[1m 74[0m[1m%[0m[1m 75[0m[1m%[0m[1m 75[0m[1m%[0m[1m 76[0m[1m%[0m[1m 76[0m[1m%[0m[1m 76[0m[1m%[0m[1m 77[0m[1m%[0m[1m 77[0m[1m%[0m[1m 78[0m[1m%[0m[1m 78[0m[1m%[0m[1m 79[0m[1m%[0m[1m 79[0m[1m%[0m[1m 79[0m[1m%[0m[1m 80[0m[1m%[0m[1m 80[0m[1m%[0m[1m 81[0m[1m%[0m[1m 81[0m[1m%[0m[1m 81[0m[1m%[0m[1m 82[0m[1m%[0m[1m 82[0m[1m%[0m[1m 83[0m[1m%[0m[1m 83[0m[1m%[0m[1m 83[0m[1m%[0m[1m 84[0m[1m%[0m[1m 84[0m[1m%[0m[1m 85[0m[1m%[0m[1m 85[0m[1m%[0m[1m 86[0m[1m%[0m[1m 86[0m[1m%[0m[1m 86[0m[1m%[0m[1m 87[0m[1m%[0m[1m 87[0m[1m%[0m[1m 88[0m[1m%[0m[1m 88[0m[1m%[0m[1m 88[0m[1m%[0m[1m 89[0m[1m%[0m[1m 89[0m[1m%[0m[1m 90[0m[1m%[0m[1m 90[0m[1m%[0m[1m 90[0m[1m%[0m[1m 91[0m[1m%[0m[1m 91[0m[1m%[0m[1m 92[0m[1m%[0m[1m 92[0m[1m%[0m[1m 93[0m[1m%[0m[1m 93[0m[1m%[0m[1m 93[0m[1m%[0m[1m 94[0m[1m%[0m[1m 94[0m[1m%[0m[1m 95[0m[1m%[0m[1m 95[0m[1m%[0m[1m 95[0m[1m%[0m[1m 96[0m[1m%[0m[1m 96[0m[1m%[0m[1m 97[0m[1m%[0m[1m 97[0m[1m%[0m[1m 97[0m[1m%100
+[0mDone.
+Writing the flowpipe(s)...
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+T::::branch id:1
+Done.
+total branches: 25
+dnn runtime: 32.953701
+
+Initial conditions:

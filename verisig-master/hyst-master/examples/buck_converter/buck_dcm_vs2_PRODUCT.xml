@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" math="SpaceEx" version="0.2">
+  <component id="buck_dcm_vs2_sys">
+    <note>Created by Hyst v1.6
+Hybrid Automaton in SpaceEx
+Converted from file: ../examples/buck_converter/buck_dcm_vs1.xml ../examples/buck_converter/buck_dcm_vs2.xml
+Command Line arguments: -v -i ../examples/buck_converter/buck_dcm_vs1.xml ../examples/buck_converter/buck_dcm_vs2.xml -p flatten "" -t spaceex "" -o ../examples/buck_converter/buck_dcm_vs2_PRODUCT.xml</note>
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="il" type="real" />
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="t" type="real" />
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="vc" type="real" />
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="mode_out" type="real" />
+    <location id="1" name="charging_charging_controller" x="1329.0" y="138.0" width="408.0" height="210.0">
+      <invariant>t &gt;= 0.0 &amp;
+t &lt;= 0.0375 &amp;
+il &gt;= 0.0 &amp;
+vc &gt;= 0.0 &amp;
+mode_out == 2.0 &amp;
+vc &lt;= 12.1 &amp;
+mode_out == 2.0</invariant>
+      <flow>il' == -271.6981132075472 * il + -377.3585 * vc + 377.3585 * 24.0 &amp;
+vc' == 454.5455 * il + -45.45454545454545 * vc + 0.0 * 24.0 &amp;
+t' == 1.0 &amp;
+mode_out' == 0.0</flow>
+    </location>
+    <location id="2" name="charging_discharging_controller" x="299.0" y="181.0" width="424.0" height="218.0">
+      <invariant>t &gt;= 0.0 &amp;
+t &lt;= 0.0375 &amp;
+il &gt;= 0.0 &amp;
+vc &gt;= 0.0 &amp;
+mode_out == 2.0 &amp;
+vc &gt;= 11.9 &amp;
+mode_out == 1.0</invariant>
+      <flow>il' == -271.6981132075472 * il + -377.3585 * vc + 377.3585 * 24.0 &amp;
+vc' == 454.5455 * il + -45.45454545454545 * vc + 0.0 * 24.0 &amp;
+t' == 1.0 &amp;
+mode_out' == 0.0</flow>
+    </location>
+    <location id="3" name="discharging_charging_controller" x="835.0" y="138.0" width="382.0" height="216.0">
+      <invariant>t &gt;= 0.0 &amp;
+t &lt;= 0.0375 &amp;
+vc &gt;= 0.0 &amp;
+il &gt;= 0.0 &amp;
+mode_out == 1.0 &amp;
+vc &lt;= 12.1 &amp;
+mode_out == 2.0</invariant>
+      <flow>il' == -196.2264 * il + -377.3585 * vc + 0.0 * 24.0 &amp;
+vc' == 454.5455 * il + -45.45454545454545 * vc + 0.0 * 24.0 &amp;
+t' == 1.0 &amp;
+mode_out' == 0.0</flow>
+    </location>
+    <location id="4" name="discharging_discharging_controller" x="794.0" y="684.0" width="382.0" height="200.0">
+      <invariant>t &gt;= 0.0 &amp;
+t &lt;= 0.0375 &amp;
+vc &gt;= 0.0 &amp;
+il &gt;= 0.0 &amp;
+mode_out == 1.0 &amp;
+vc &gt;= 11.9 &amp;
+mode_out == 1.0</invariant>
+      <flow>il' == -196.2264 * il + -377.3585 * vc + 0.0 * 24.0 &amp;
+vc' == 454.5455 * il + -45.45454545454545 * vc + 0.0 * 24.0 &amp;
+t' == 1.0 &amp;
+mode_out' == 0.0</flow>
+    </location>
+    <location id="5" name="dcm_charging_controller" x="1329.0" y="683.0" width="292.0" height="208.0">
+      <invariant>t &gt;= 0.0 &amp;
+t &lt;= 0.0375 &amp;
+vc &gt;= 0.0 &amp;
+il &lt;= 0.0 &amp;
+mode_out == 1.0 &amp;
+vc &lt;= 12.1 &amp;
+mode_out == 2.0</invariant>
+      <flow>il' == 0.0 &amp;
+vc' == -45.45454545454545 * vc + 0.0 * 24.0 &amp;
+t' == 1.0 &amp;
+mode_out' == 0.0</flow>
+    </location>
+    <location id="6" name="dcm_discharging_controller" x="301.0" y="684.0" width="296.0" height="210.0">
+      <invariant>t &gt;= 0.0 &amp;
+t &lt;= 0.0375 &amp;
+vc &gt;= 0.0 &amp;
+il &lt;= 0.0 &amp;
+mode_out == 1.0 &amp;
+vc &gt;= 11.9 &amp;
+mode_out == 1.0</invariant>
+      <flow>il' == 0.0 &amp;
+vc' == -45.45454545454545 * vc + 0.0 * 24.0 &amp;
+t' == 1.0 &amp;
+mode_out' == 0.0</flow>
+    </location>
+    <transition asap="false" bezier="false" source="1" target="4" timedriven="false">
+      <guard>vc &gt;= 12.1</guard>
+      <assignment>mode_out' == 1.0</assignment>
+      <labelposition x="-386.0" y="-246.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="1" target="3" timedriven="false">
+      <guard>vc &lt; 12.1</guard>
+      <labelposition x="-341.0" y="-211.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="2" target="3" timedriven="false">
+      <guard>vc &lt;= 11.9</guard>
+      <assignment>mode_out' == 2.0</assignment>
+      <labelposition x="-386.0" y="-246.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="2" target="4" timedriven="false">
+      <guard>vc &gt; 11.9</guard>
+      <labelposition x="14.0" y="-23.0" width="98.0" height="76.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="3" target="2" timedriven="false">
+      <guard>vc &gt;= 12.1</guard>
+      <assignment>mode_out' == 1.0</assignment>
+      <labelposition x="-386.0" y="-246.0" />
+      <middlepoint x="537.0" y="198.5" />
+    </transition>
+    <transition asap="false" bezier="false" source="3" target="1" timedriven="false">
+      <guard>vc &lt; 12.1</guard>
+      <labelposition x="-341.0" y="-211.0" />
+      <middlepoint x="1055.0" y="189.0" />
+    </transition>
+    <transition asap="false" bezier="false" source="4" target="1" timedriven="false">
+      <guard>vc &lt;= 11.9</guard>
+      <assignment>mode_out' == 2.0</assignment>
+      <labelposition x="45.0" y="-115.0" width="114.0" height="86.0" />
+      <middlepoint x="1133.5" y="518.5" />
+    </transition>
+    <transition asap="false" bezier="false" source="4" target="2" timedriven="false">
+      <guard>vc &gt; 11.9</guard>
+      <labelposition x="-431.0" y="-281.0" />
+      <middlepoint x="163.0" y="342.0" />
+    </transition>
+    <transition asap="false" bezier="false" source="3" target="6" timedriven="false">
+      <guard>il &lt;= 0.0 &amp;
+ vc &gt;= 12.1</guard>
+      <assignment>mode_out' == 1.0</assignment>
+      <labelposition x="-566.0" y="-386.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="3" target="5" timedriven="false">
+      <guard>il &lt;= 0.0 &amp;
+ vc &lt; 12.1</guard>
+      <labelposition x="-521.0" y="-351.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="4" target="5" timedriven="false">
+      <guard>il &lt;= 0.0 &amp;
+ vc &lt;= 11.9</guard>
+      <assignment>mode_out' == 2.0</assignment>
+      <labelposition x="-68.0" y="-10.0" width="170.0" height="108.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="4" target="6" timedriven="false">
+      <guard>il &lt;= 0.0 &amp;
+ vc &gt; 11.9</guard>
+      <labelposition x="-72.0" y="8.0" width="92.0" height="64.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="5" target="2" timedriven="false">
+      <guard>vc &gt;= 12.1</guard>
+      <assignment>mode_out' == 1.0</assignment>
+      <labelposition x="-476.0" y="-316.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="5" target="1" timedriven="false">
+      <guard>vc &lt; 12.1</guard>
+      <labelposition x="14.0" y="-40.0" width="82.0" height="66.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="6" target="1" timedriven="false">
+      <guard>vc &lt;= 11.9</guard>
+      <assignment>mode_out' == 2.0</assignment>
+      <labelposition x="-476.0" y="-316.0" />
+      <middlepoint />
+    </transition>
+    <transition asap="false" bezier="false" source="6" target="2" timedriven="false">
+      <guard>vc &gt; 11.9</guard>
+      <labelposition x="-521.0" y="-351.0" />
+      <middlepoint />
+    </transition>
+  </component>
+  <component id="buck_dcm_vs2_net">
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="il" type="real" />
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="t" type="real" />
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="vc" type="real" />
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="mode_out" type="real" />
+    <bind as="buck_dcm_vs2" component="buck_dcm_vs2_sys">
+      <map key="il">il</map>
+      <map key="t">t</map>
+      <map key="vc">vc</map>
+      <map key="mode_out">mode_out</map>
+    </bind>
+  </component>
+</sspaceex>
+

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<sspaceex xmlns="http://www-verimag.imag.fr/xml-namespaces/sspaceex" math="SpaceEx" version="0.2">
+  <component id="belt_robot_1_sys">
+    <note>Created by Hyst v1.6
+Hybrid Automaton in SpaceEx
+Converted from file: ../examples/Robot_belt/belt_robot_1.xml
+Command Line arguments: -i ../examples/Robot_belt/belt_robot_1.xml -t spaceex "" -o TEST.xml</note>
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="Belt_1_carrier_free" type="real"/>
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="Belt_1_workplace_inside" type="real"/>
+    <location id="1" name="belt_off">
+      <invariant>true</invariant>
+    </location>
+    <location id="2" name="belt_on">
+      <invariant>true</invariant>
+    </location>
+    <transition asap="false" bezier="false" source="1" target="2" timedriven="false">
+      <guard>Belt_1_carrier_free == 1.0</guard>
+      <labelposition/>
+      <middlepoint/>
+    </transition>
+    <transition asap="false" bezier="false" source="2" target="1" timedriven="false">
+      <guard>workpiece_inside == 1.0</guard>
+      <labelposition/>
+      <middlepoint/>
+    </transition>
+  </component>
+  <component id="belt_robot_1_net">
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="Belt_1_carrier_free" type="real"/>
+    <param controlled="true" d1="1" d2="1" dynamics="any" local="false" name="Belt_1_workplace_inside" type="real"/>
+    <bind as="belt_robot_1" component="belt_robot_1_sys">
+      <map key="Belt_1_carrier_free">Belt_1_carrier_free</map>
+      <map key="Belt_1_workplace_inside">Belt_1_workplace_inside</map>
+    </bind>
+  </component>
+</sspaceex>
+
