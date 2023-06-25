@@ -1,0 +1,21 @@
+time: 100
+max jumps: 50
+fixed orders: 3
+adaptive steps: '{min 1e-6, max 0.1}'
+
+init: 
+  mode: initD_initN
+  states:
+    - clock in [0, 0]
+    - clockD in [0, 0]
+    - clockN in [0, 0]
+    - posD in [0.5, 0.5]
+    - posN in [0.5, 0.5]
+
+unsafe:
+  - mode: environmentD_environmentN
+    states:
+    -  costD - costN >= 0.25
+print: 'on'
+plot: true
+dump: true

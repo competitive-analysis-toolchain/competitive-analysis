@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<sspaceex version="0.2" math="SpaceEx">
+  <component id="D">
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="clockD" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="_f1" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="_f2" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="_f3" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="_f4" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="FD" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="posD" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="thetaD" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="dposD" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="dthetaD" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="costD" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="clock" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="clockG" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="const" name="m" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="const" name="L" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="const" name="g" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="const" name="mcart" />
+    <param type="label" local="false" name="choice" />
+    <param type="label" local="false" name="chosen" />
+    <param type="label" local="false" name="reset" />
+    <location x="349.0" y="150.0" width="154.0" height="174.0" id="2" name="initD">
+      <invariant>clockD &lt;= 0</invariant>
+      <flow>clockD'== 1&amp;
+posD' == 0&amp;
+thetaD' == 0&amp;
+dposD' == 0&amp;
+dthetaD' == 0&amp;
+costD' == 0&amp;
+clockG' == 1&amp;
+FD' = 0</flow>
+    </location>
+    <location x="801.0" y="453.0" width="198.0" height="200.0" id="3" name="environmentD">
+      <invariant>clockD &lt;= 0.04</invariant>
+      <flow>clockD' == 1&amp;
+posD' == dposD&amp;
+thetaD' == dthetaD&amp;
+dposD' == (-1.0 * 2.0 * sin(thetaD) * dthetaD * dthetaD + 1.0 * 9.81 * cos(thetaD) * sin(thetaD) + FD) / (0.5 + 1.0 - 1.0 * cos(thetaD) * cos(thetaD))&amp;
+dthetaD' == (-1.0 * 2.0 * cos(thetaD) * sin(thetaD) * dthetaD * dthetaD + FD * cos(thetaD) + (0.5 + 1.0) * 9.81 * sin(thetaD)) / (2.0 * (0.5 + 1.0 - 1.0 * cos(thetaD) * cos(thetaD)))&amp;
+costD' == FD * FD + 100.0 * posD * posD&amp; 
+clockG' == 1&amp; 
+FD' == 0</flow>
+    </location>
+    <location x="800.0" y="150.0" width="154.0" height="164.0" id="4" name="DNN1">
+      <invariant />
+      <flow>clockD'==1&amp;
+posD'==0&amp;
+thetaD'== 0&amp;
+dposD'==0&amp;
+dthetaD'==0&amp;
+costD'==0&amp;
+clockG' == 1&amp;
+FD' == 0</flow>
+    </location>
+    <transition source="2" target="4">
+      <label>choice</label>
+      <labelposition x="-71.0" y="-121.0" width="148" height="120" />
+      <guard>clockD==0.0</guard>
+      <assignment>clockD := 0.0&amp;
+_f1 := posD&amp;
+_f2 := thetaD&amp;
+_f3 := dposD&amp;
+_f4 := dthetaD</assignment>
+    </transition>
+    <transition source="4" target="3">
+      <label>chosen</label>
+      <labelposition x="0.0" y="-45.0" width="122" height="74" />
+      <guard>clockD==0.0</guard>
+      <assignment>clockD:= 0.0&amp;
+FD:= -2+_f1*4</assignment>
+    </transition>
+    <transition source="3" target="2">
+      <label>reset</label>
+      <labelposition x="-117.0" y="-27.0" width="96.0" height="62.0" />
+      <guard>clockD==0.04</guard>
+      <assignment>clockD:=0.0</assignment>
+    </transition>
+  </component>
+  <component id="N">
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="clockN" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="FN" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="posN" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="thetaN" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="dposN" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="dthetaN" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="costN" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="clock" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="any" name="clockG" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="const" name="m" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="const" name="L" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="const" name="g" />
+    <param type="real" local="false" d1="1" d2="1" dynamics="const" name="mcart" />
+    <param type="label" local="false" name="choice" />
+    <param type="label" local="false" name="chosen" />
+    <param type="label" local="false" name="reset" />
+    <location x="302.0" y="121.0" width="122.0" height="182.0" id="2" name="initN">
+      <invariant>clockN &lt;= 0</invariant>
+      <flow>clockN'==1&amp;
+FN'==0&amp;
+posN' == 0&amp;
+thetaN' == 0&amp;
+dposN' == 0&amp;
+dthetaN' == 0&amp;
+costN' == 0&amp;
+clockG' == 1</flow>
+    </location>
+    <location x="653.0" y="535.0" width="148.0" height="182.0" id="3" name="environmentN">
+      <invariant>clockN &lt;= 0.04</invariant>
+      <flow>clockN' == 1.0&amp;
+posN' == dposN&amp;
+FN' == 0.0&amp;
+thetaN' == dthetaN&amp;
+dposN' == (-1.0 * 2.0 * sin(thetaN) * dthetaN * dthetaN + 1.0 * 9.81 * cos(thetaN) * sin(thetaN) + FN) / (0.5 + 1.0 - 1.0 * cos(thetaN) * cos(thetaN))&amp;
+dthetaN' == (-1.0 * 2.0 * cos(thetaN) * sin(thetaN) * dthetaN * dthetaN + FN * cos(thetaN) +  (0.5 + 1.0) * 9.81 * sin(thetaN))/(2.0 * (0.5 + 1.0 - 1.0 * cos(thetaN) * cos(thetaN)))&amp;
+costN' == FN * FN + 100.0 * posN * posN&amp; 
+clockG' == 1</flow>
+    </location>
+    <location x="654.0" y="127.0" width="214.0" height="176.0" id="4" name="DNN1">
+      <invariant />
+      <flow>clockN'==0&amp;
+FN'==0&amp;
+posN'==0&amp;
+thetaN'== 0&amp;
+dposN'==0&amp;
+dthetaN'==0&amp;
+costN'==0&amp;
+clockG' == 1</flow>
+    </location>
+    <transition source="2" target="4">
+      <label>choice</label>
+      <labelposition x="-112.0" y="-17.0" width="122" height="58" />
+      <guard>clockN == 0.0</guard>
+      <assignment>clockN := 0.0</assignment>
+    </transition>
+    <transition source="4" target="3">
+      <label>chosen</label>
+      <labelposition x="-31.0" y="-40.0" width="98.0" height="84.0" />
+      <middlepoint x="536.0" y="333.0" />
+      <guard>clockN == 0.0</guard>
+      <assignment>clockN := 0.0&amp;
+FN := -2.0</assignment>
+    </transition>
+    <transition source="4" target="3">
+      <label>chosen</label>
+      <labelposition x="-13.0" y="-75.0" width="92.0" height="86.0" />
+      <middlepoint x="610.0" y="326.0" />
+      <guard>clockN==0.0</guard>
+      <assignment>clockN:= 0.0&amp;
+FN := -1.0</assignment>
+    </transition>
+    <transition source="4" target="3">
+      <label>chosen</label>
+      <labelposition x="-46.0" y="-25.0" width="96.0" height="112.0" />
+      <guard>clockN==0.0</guard>
+      <assignment>clockN:= 0.0&amp;
+FN:= 0.0</assignment>
+    </transition>
+    <transition source="4" target="3">
+      <label>chosen</label>
+      <labelposition x="-52.0" y="-35.0" width="94.0" height="88.0" />
+      <middlepoint x="712.0" y="331.0" />
+      <guard>clockN==0.0</guard>
+      <assignment>clockN:= 0.0&amp;
+FN:= 1.0</assignment>
+    </transition>
+    <transition source="4" target="3">
+      <label>chosen</label>
+      <labelposition x="-28.0" y="-24.0" width="94.0" height="78.0" />
+      <middlepoint x="769.0" y="340.0" />
+      <guard>clockN==0.0</guard>
+      <assignment>clockN:= 0.0&amp;
+FN:= 2.0</assignment>
+    </transition>
+    <transition source="3" target="2">
+      <label>reset</label>
+      <labelposition x="-72.0" y="-1.0" width="102.0" height="70.0" />
+      <guard>clockN==0.04</guard>
+      <assignment>clockN:=0.0</assignment>
+    </transition>
+  </component>
+  <component id="A">
+    <param name="clockD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="_f1" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="_f2" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="_f3" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="_f4" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="FD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="posD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="thetaD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="dposD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="dthetaD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="costD" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="clock" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="clockG" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="m" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="L" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="g" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="mcart" type="real" local="false" d1="1" d2="1" dynamics="const" controlled="true" />
+    <param name="choice" type="label" local="false" />
+    <param name="chosen" type="label" local="false" />
+    <param name="reset" type="label" local="false" />
+    <param name="clockN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="FN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="posN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="thetaN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="dposN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="dthetaN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <param name="costN" type="real" local="false" d1="1" d2="1" dynamics="any" controlled="true" />
+    <bind component="D" as="D_1" x="806.0" y="254.0">
+      <map key="clockD">clockD</map>
+      <map key="_f1">_f1</map>
+      <map key="_f2">_f2</map>
+      <map key="_f3">_f3</map>
+      <map key="_f4">_f4</map>
+      <map key="FD">FD</map>
+      <map key="posD">posD</map>
+      <map key="thetaD">thetaD</map>
+      <map key="dposD">dposD</map>
+      <map key="dthetaD">dthetaD</map>
+      <map key="costD">costD</map>
+      <map key="clock">clock</map>
+      <map key="clockG">clockG</map>
+      <map key="m">1</map>
+      <map key="L">2</map>
+      <map key="g">9.81</map>
+      <map key="mcart">0.5</map>
+      <map key="choice">choice</map>
+      <map key="chosen">chosen</map>
+      <map key="reset">reset</map>
+    </bind>
+    <bind component="N" as="N_1" x="633.0" y="564.0">
+      <map key="clockN">clockN</map>
+      <map key="FN">FN</map>
+      <map key="posN">posN</map>
+      <map key="thetaN">thetaN</map>
+      <map key="dposN">dposN</map>
+      <map key="dthetaN">dthetaN</map>
+      <map key="costN">costN</map>
+      <map key="clock">clock</map>
+      <map key="clockG">clockG</map>
+      <map key="m">1</map>
+      <map key="L">2</map>
+      <map key="g">9.81</map>
+      <map key="mcart">0.5</map>
+      <map key="choice">choice</map>
+      <map key="chosen">chosen</map>
+      <map key="reset">reset</map>
+    </bind>
+  </component>
+</sspaceex>
+
