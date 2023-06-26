@@ -66,7 +66,7 @@ if [ $exit_code -eq 0 ]; then
         cd ~/Git_repo/flowstar_tree_code/mpc-verification/Automation_dryrun_3/motion_planning/main
 
         # Execute command to train DNN iteration-0
-        python main.py --flow-file flow_iteration0.txt --controller-file mpc_dataset_index.csv --input-variables xD yD thetaD --output-variables deltaD vD --amount_interval_points 4 --amount_of_reference_points 0 --decimal-precision 3 --output-file retraining.csv --old-dataset mpc_dataset.csv --hyper-training-epochs 50 --hyper-training-factor 3 --NN-training-epochs 100 --output-folder retraining_output --hypertune false --hyperparameter_file hyperparameters
+        python main.py --flow-file flow_iteration0.txt --controller-file mpc_dataset_index.csv --input-variables xD yD thetaD --output-variables deltaD vD --amount_interval_points 4 --amount_of_reference_points 0 --decimal-precision 3 --output-file retraining.csv --old-dataset mpc_dataset.csv --hyper-training-epochs 50 --hyper-training-factor 3 --NN-training-epochs 5 --output-folder retraining_output --hypertune false --hyperparameter_file hyperparameters
 
         # Check the exit code of train DNN iteration-0
         exit_code=$?
@@ -139,7 +139,7 @@ if [ $exit_code -eq 0 ]; then
                          cd ~/Git_repo/flowstar_tree_code/mpc-verification/Automation_dryrun_3/motion_planning/main
 			   
 			 # Execute the command for retraining
-               python main.py --flow-file flow_iteration${i}.txt --controller-file mpc_dataset_index.csv --input-variables xD yD thetaD --output-variables deltaD vD --amount_interval_points 4 --amount_of_reference_points 0 --decimal-precision 3 --output-file retraining${i}.csv --old-dataset dataset_iteration$((i-1)).csv --hyper-training-epochs 50 --hyper-training-factor 3 --NN-training-epochs 100 --output-folder retraining_output --hypertune false --hyperparameter_file hyperparameters
+               python main.py --flow-file flow_iteration${i}.txt --controller-file mpc_dataset_index.csv --input-variables xD yD thetaD --output-variables deltaD vD --amount_interval_points 4 --amount_of_reference_points 0 --decimal-precision 3 --output-file retraining${i}.csv --old-dataset dataset_iteration$((i-1)).csv --hyper-training-epochs 50 --hyper-training-factor 3 --NN-training-epochs 5 --output-folder retraining_output --hypertune false --hyperparameter_file hyperparameters
 			   
 			 # Rename the "retraining_output" folder as per iteration#
                          mv retraining_output Iteration_${i}
