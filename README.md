@@ -2,7 +2,7 @@
 The following commands guides the user to run the Competitive analysis toolchain inside a virtual environment.
 The toolchain is tested on Ubuntu 16.04 using Python 3.6.10
 
-##Pre-requisites
+## Pre-requisites
 1. Java: The HyST tool requires Java. Install it with the following command: `$ sudo apt install openjdk-8-jre-headless`
 2. Flow* Compilation: The Flow* tool needs to be compiled to generate the Flow* binary. Follow these steps to install the required libraries and compile Flow*:
 - `$ sudo apt install libgmp3-dev`
