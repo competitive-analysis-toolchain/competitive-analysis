@@ -11,9 +11,7 @@ from general_Test_NN_functions import Evaluate_NN_with_MPC, get_total_MSE_result
 from Use_Case_class import Data_set
 
 from Use_Case_class import Use_Case
-#from Use_cases.Scara.scara_use_case import SCARA_Use_case
 from Use_cases.Cart_pole.cart_pole_use_case import Cart_pole_Use_case
-from Use_cases.Car_example.car_example_use_case import  Car_example_Use_case
 from Use_cases.Motion_planning.motion_planning_use_case import Motion_planning_Use_case
 
 """This File contains higher abstract methods to hypertune and train Neural Networks"""
