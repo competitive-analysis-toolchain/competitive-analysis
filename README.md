@@ -1,6 +1,6 @@
 # Competitive Analysis Toolchain
 The following commands guides the user to run the Competitive analysis toolchain inside a virtual environment.
-The toolchain is tested on Ubuntu 16.04 using Python 3.6.10
+The toolchain is tested on Ubuntu 16.04 using Python 3.6.10 and on Ubuntu 22.04 using Python 3.10.6.
 
 ## Pre-requisites
 1. Java: The HyST tool requires Java. Download and install Java 1.8+ by following the instructions available at [JavaDownloads](https://www.java.com/en/download/help/download_options.html)
@@ -16,14 +16,14 @@ The toolchain is tested on Ubuntu 16.04 using Python 3.6.10
 - The output from Flow* is parsed by our Flowpipeanalyser, which requires the Jsoncpp library. We have used _libjsoncpp-dev 1.7.2-1_ which can be downloaded from [Jsoncpp Releases](https://github.com/open-source-parsers/jsoncpp/releases/tag/1.7.2) or from [Launchpad](https://launchpad.net/ubuntu/+source/libjsoncpp) for Ubuntu. For user's convenience, the required Jsoncpp library files (`/flowstar/lib`), header files (`flowstar/jsoncpp/json`), and make files (`/flowstar/cmake/jsoncpp`) are included in the _flowstar_ folder.
 - From the _flowstar_ folder, run the make command: `$ cd flowstar; make`
 
-
 ## Installation
-1. Create a virtual environment (say, `env`) and activate it
+1. Create a virtual environment (say, `env`) and activate it.
 - `$ python3 -m venv env`
 - `$ source env/bin/activate`
 
-2. Install the required tools and packages
-`$ pip install -r requirements.txt`
+2. Install the required Python packages. Depending on your Python version and Ubuntu distribution, use the appropriate `requirements_ubuntu16_04.txt` or `requirements_ubuntu22_04.txt` file as a reference. These files contain the specific packages needed for the DNN training code.
+- For Python 3.6.10 on Ubuntu 16.04: `$ pip install -r requirements_ubuntu16_04.txt`
+- For Python 3.10.6 on Ubuntu 22.04: `$ pip install -r requirements_ubuntu22_04.txt`
 
 ## Usage
 
