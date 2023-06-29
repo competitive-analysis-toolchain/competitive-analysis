@@ -3,7 +3,7 @@ The following commands guides the user to run the Competitive analysis toolchain
 The toolchain is tested on Ubuntu 16.04 using Python 3.6.10
 
 ## Pre-requisites
-1. Java: The HyST tool requires Java. Install it with the following command: `$ sudo apt install openjdk-8-jre-headless`
+1. Java: The HyST tool requires Java. Download and install Java 1.8+ by following the instructions available at [JavaDownloads](https://www.java.com/en/download/help/download_options.html)
 2. Flow* Compilation: The Flow* tool needs to be compiled to generate the Flow* binary. Follow these steps to install the required libraries and compile Flow*:
 - `$ sudo apt install libgmp3-dev`
 - `$ sudo apt install libmpfr-dev libmpfr-doc libmpfr4 libmpfr4-dbg`
@@ -13,7 +13,8 @@ The toolchain is tested on Ubuntu 16.04 using Python 3.6.10
 - `$ sudo apt install gnuplot-x11`
 - `$ sudo apt install libglpk-dev`
 - `$ sudo apt install libyaml-cpp-dev`
-- `$ cd flowstar; make`
+- The output from Flow* is parsed by our Flowpipeanalyser, which requires the Jsoncpp library. We have used _libjsoncpp-dev 1.7.2-1_ which can be downloaded from [Jsoncpp Releases](https://github.com/open-source-parsers/jsoncpp/releases/tag/1.7.2) or from [Launchpad](https://launchpad.net/ubuntu/+source/libjsoncpp) for Ubuntu. For user's convenience, the required Jsoncpp library files (`/flowstar/lib`), header files (`flowstar/jsoncpp/json`), and make files (`/flowstar/cmake/jsoncpp`) are included in the _flowstar_ folder.
+- From the _flowstar_ folder, run the make command: `$ cd flowstar; make`
 
 
 ## Installation
